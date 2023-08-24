@@ -1,0 +1,70 @@
+.nav_unit:first-child{
+	color: unset;
+}
+
+.nav_unit:first-child:hover{
+	color: #029863;
+}
+
+.container{
+	    background-color: rgb(247,247,247);
+}
+
+h1{
+	font-family: geosemibold;
+	font-size: 2.2rem;
+	text-align: center;
+}
+
+.the_new_container a{
+	/*text-decoration: underline;*/
+	color: -webkit-link;;
+}
+
+.the_new_container{
+	margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+
+.n_main_image{
+	margin-top: 1.5rem;
+	margin-inline: auto;
+}
+
+.n_main_image img{
+	max-height: 600px;
+	width: 100%;
+	border-radius: 20px;
+}
+
+.n_date_2{
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: geolight;
+	margin-top: 1rem;
+	color: steelblue;
+}
+
+.n_main_text{
+	margin-top: 1rem;
+	margin-bottom: 5rem;
+	border-bottom: 2px solid;
+}
+
+.n_main_text p{
+	font-family: geolight;
+	line-height: 1.5;
+	font-size: 1rem;
+	margin-top: 10px;
+}
+
+.n_main_text h4{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.n_main_text>div{
+	margin-bottom: 2rem;
+}

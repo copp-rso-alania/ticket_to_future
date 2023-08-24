@@ -1,0 +1,50 @@
+.nav_unit:first-child{
+	color: unset;
+}
+
+.nav_unit:first-child:hover{
+	color: #029863;
+}
+
+.nav_unit:nth-child(2){
+	color: #029863;
+}
+
+
+.n_block{
+	padding: 10px;
+}
+
+
+.n_text{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 170px;
+}
+
+.n_text p{
+	font-size: .9rem;
+	text-align: right;
+	color: #3a96eb;
+	font-weight: bold;
+}
+
+
+
+@media(max-width: 715px){
+	.n_text{
+		min-height: unset;
+	}
+}
+
+@media(max-width: 500px){
+/*	.n_text h3{
+		font-size: .8rem;
+	}*/
+
+	.n_text p{
+		font-size: .6rem;
+	}
+
+}
