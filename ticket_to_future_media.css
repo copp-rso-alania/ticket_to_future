@@ -1,0 +1,67 @@
+@media(max-width: 848px){
+	.line_unit{
+		display: none;
+		height: 25px;
+	}
+
+	header{
+		padding-bottom: .8rem;
+	}
+
+	html{
+		font-size: 18px;
+	}
+
+	h1{
+		font-size: 2.5rem;
+	}
+
+	.title_news h2{
+		font-size: 1.4rem;
+	}
+
+	.news_blocks{
+		margin-top: 2rem;
+	}
+
+	.allnews{
+		padding-top: 2rem;
+	}
+}
+
+
+@media(max-width: 500px){
+	.n_text h3{
+		font-size: .9rem;
+	}
+
+	.n_text p{
+		font-size: .6rem;
+	}
+
+	.n_date{
+		font-size: .6rem;
+	}
+	
+	.n_block{
+		padding: 10px;
+	}
+
+	h1{
+		font-size: 2rem;
+	}
+
+	.title_news h2{
+		font-size: 1rem;
+	}
+
+	.news_blocks{
+		margin-top: 1.5rem;
+	}
+
+	.allnews{
+		padding-top: 1.5rem;
+	}
+
+
+}
