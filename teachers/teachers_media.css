@@ -1,0 +1,261 @@
+@media(max-width: 1500px){
+	.p_advantage{
+		margin-inline: 1rem;
+	}
+	.tusedocs_flex{
+		justify-content: space-around;
+		gap: 1rem;
+	}
+
+	.usedocs_unit{
+		flex-basis: 44%;
+	}
+}
+
+@media(max-width: 1000px){
+	.p_notepad{
+		flex-direction: column;
+		text-align: center;
+		padding: 1rem;
+	}
+
+	.p_note_left p{
+		margin-bottom: 1rem;
+	}
+
+	.p_note_right img{
+		max-width: 100%;
+	}
+
+	.t_become_teacher{
+		margin-inline: 1rem;
+	}
+
+	.tap_video{
+		flex-direction: column;
+	}
+
+	.tapv_unit{
+		margin-top: 1.5rem;
+	}
+}
+
+
+@media(max-width: 800px){
+	.t_bucklet{
+		flex-direction: column;
+		text-align: center;
+		margin-inline: 1rem;
+		padding-inline: 1rem;
+		row-gap: 1.5rem;
+	}
+
+	.t_images_line{
+		column-gap: 0;
+	}
+
+	.tb_text button{
+		margin-top: 0px;
+	}
+
+	.tb_text h2{
+		font-size: 1.4rem;
+	}
+
+	.tb_text p{
+		font-size: .9rem;
+	}
+
+	.tb_teacher_h2,.p_advantage h2,h1{
+		font-size: 1.5rem;
+	}
+
+
+	.t_top_buts button,.p_note_left button{
+		font-size: .8rem;
+		padding: .7rem .9rem;
+	}
+
+	.tapc_unit{
+		flex-basis: 100%;
+	}
+
+	.tap_cards,.tap_video{
+		margin-inline: 1rem;
+	}
+
+	.p_adv_flex{
+		justify-content: left;
+	}
+
+	.padv_unit_image{
+		align-self: flex-start;
+	}
+
+	/*.p_adv_unit{
+		font-size: 1.4rem;
+	}*/
+
+	.tbt_flex{
+		flex-direction: column;
+	}
+
+	.tbtf_image img{
+		border-radius: 30px;
+		max-height: 500px;
+		width: 100%;
+	}
+
+	.tbtf_image{
+		font-size: 0;
+	}
+
+	.tbtf_text{
+		border-radius: 30px;
+	}
+
+	.tbtft_main_text{
+		font-size: 1.2rem;
+	}
+
+	.pick_author{
+		flex-basis: 20%;
+	}
+
+	.tbtf_2_main{
+		gap: 1rem;
+	}
+
+	.pre_p_notepad{
+		padding: 1rem;
+	}
+
+}
+
+
+@media(max-width: 800px){
+	.usedocs_unit{
+		flex-basis: 100%;
+	}
+
+	.usedocs_text>div{
+		margin-bottom: 1rem;
+	}
+
+	.toppage_image{
+		margin-bottom: 1rem;
+	}
+
+	.parent_toppage h2,.p_note_left p{
+		font-size: .8rem;
+		text-align: left;
+	}
+
+	.allnews{
+		padding-inline: 1rem;
+		padding-bottom: 2rem;
+	}
+
+	.parents_main_content{
+		padding-top: 2rem;
+	}
+
+	.t_images_unit{
+		min-width: 100%;
+	}
+}
+
+@media(max-width: 650px){
+	.tv_line_unit{
+		flex-basis: unset;
+		min-width: 100%;
+	}
+
+	.t_videos_line{
+		gap: 0;
+	}
+
+	/*.tv_line_unit video{
+		height: unset;
+	}*/
+}
+
+
+@media(max-width: 500px){
+	.tb_teacher_h2, .p_advantage h2, h1,.p_note_left h2{
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+	}
+
+	.tbtft_main_text{
+		font-size: 1rem;
+	}
+
+	.tbtft_down_text p{
+		font-size: .8rem;
+	}
+
+	.tbtft_down_text h3{
+		font-size: .9rem;
+	}
+
+	.t_top_buts{
+		flex-direction: column;
+	}
+
+	.parents_main_content{
+		padding-top: 2rem;
+	}
+
+
+	.t_become_teacher,.t_bucklet,.t_about_project,.p_advantage{
+		margin-top: 2rem;
+	}
+
+	.tbt_flex_2{
+		margin-top: 1rem;
+	}
+
+	.tb_text h2{
+		font-size: 1.2rem;
+	}
+
+	.t_bucklet{
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.tapc_unit h2{
+		font-size: 1.2rem;
+	}
+
+	.tapc_unit p{
+		font-size: .9rem;
+	}
+
+	.tap_cards{
+		gap: 1rem;
+	}
+
+	.tapv_unit{
+		margin-top: 1rem;
+		font-size: 0;
+	}
+
+	.padv_unit_text{
+		font-size: 1rem;
+	}
+
+	.padv_unit_image img{
+		width: 70px;
+		height: 70px;
+	}
+
+	.p_adv_unit{
+		    margin-left: 3rem;
+	}
+
+	.tb_text p{
+		text-align: left;
+	}
+}

@@ -1,0 +1,22 @@
+@media(max-width: 848px){
+	.line_unit{
+		display: none;
+		height: 25px;
+	}
+
+	header{
+		padding-bottom: .8rem;
+	}
+
+	html{
+		font-size: 17px;
+	}
+
+	h1{
+		font-size: 1.6rem;
+	}
+
+	.n_main_text{
+		margin-top: 1.5rem;
+	}
+}

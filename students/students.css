@@ -1,0 +1,333 @@
+.nav_unit:first-child{
+	color: unset;
+}
+
+
+.nav_unit:first-child:hover{
+	color: #029863;
+}
+
+.nav_unit:nth-child(5){
+	color: #029863;
+}
+
+
+body{
+	min-width: 400px;
+}
+
+h1{
+	margin-top: 1rem;
+}
+
+
+.allnews{position: relative; 	overflow: hidden; padding-bottom: 4.5rem;
+	padding-inline: 30px;
+	background: linear-gradient(220.42deg,#00d07c 27.8%,#0f9b91 43.85%);
+	/*background: linear-gradient(to left,#00d07c 10%,#0f9b91 70%);*/
+}
+
+.parent_toppage{
+	color: white;
+	text-align: center;
+}
+
+
+.toppage_image img{
+	max-width: 80%;
+	border-radius: 30px;
+}
+
+.toppage_image video{
+	min-height: 200px;
+	max-height: 400px;
+	max-width: 100%;
+}
+
+.toppage_image{position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.parent_toppage h2{
+	/*margin-top: 10px;
+	margin-bottom: 1.5rem;*/
+	max-width: 1000px;
+	margin: .9rem auto 0rem auto;
+	font-size: 1.2rem;
+}
+
+.parent_toppage button{
+	font-size: 1rem;
+	padding: 1.2rem  2rem;
+	border: none;
+	border-radius: 2rem;
+	color: #0f9b91;
+	font-family: geosemibold;
+	cursor: pointer;
+	transition-property: color,box-shadow;
+	transition-duration: .3s;
+}
+
+.parent_toppage button:hover,.p_info_card form button:hover,.pb_way_button button:hover,.p_note_left button:hover,
+.tb_text button:hover{
+	color: #00d07c;
+	box-shadow: 0px 0px 20px white;
+}
+
+.t_top_buts{
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.t_top_buts button{
+	padding: 1rem 1.8rem;
+}
+
+
+.main_school_cont{
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+/*.djurnal{
+	text-align: center;
+	font-size: 2.5rem;
+	color: rgb(3, 120, 85);
+	margin-top: 0;
+	margin-bottom: 3rem;
+}*/
+
+.main_school_cont:last-child{
+	padding-top: 0;
+}
+
+.main_school_cont{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.school_flex_cards{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.school_card{
+	border-radius: 20px;
+	background-color: rgb(242,242,242);
+	/*flex-basis: 31%;*/
+	flex-basis: 447px;
+	position: relative;
+
+}
+
+.card_image img{
+	border-radius: 20px 20px 0px 0px;
+	max-width: 100%;
+}
+
+.card_disc h2{
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+	font-size: 1.3rem;
+}
+
+.card_disc p{
+	margin-bottom: .5rem;
+	margin-top: .5rem;
+	font-size: .9rem;
+	line-height: 1.4;
+}
+
+.card_disc{
+	padding: 5px 10px 2rem 10px;
+}
+
+
+.link_card{
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+
+}
+
+.link_card a{
+	font-family: 'geo';
+	font-style: italic;
+	font-size: .95rem;
+	color: #029863;
+}
+
+
+.kinco_title{
+	text-align: center;
+	font-size: 2.5rem;
+	color: rgb(3, 120, 85);
+	margin-top: 0;
+	margin-bottom: 1.7rem;
+}
+
+.kinco_disc>h2{
+	text-align: center;
+	font-size: 1.7rem;
+	margin-bottom: 0;
+}
+
+.kinco_disc p{
+	margin-top: .7rem;
+	line-height: 1.4;
+	font-size: 1.1rem;
+	margin-bottom: 1.2rem;
+}
+
+/*.kinco_kinco video{
+	object-fit: fill;
+	width: 100%;
+	max-height: 500px;
+}*/
+
+.kinco_kinco iframe{
+	object-fit: fill;
+	width: 100%;
+	height: 500px;
+}
+
+.kinco_unit{
+	max-width: 1300px;
+	padding-bottom: 2rem;
+	margin: 0 auto;
+}
+
+.kinco_unit:not(:last-child){
+	border-bottom: 4px solid rgb(3, 120, 85);
+}
+
+.kinco{
+	margin-inline: 1rem;
+}
+
+.main_school_cont .djurnal{
+	text-align: center;
+	margin-top: 0;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	letter-spacing: 1px;
+}
+
+
+.grass{
+	font-size: 0;
+	bottom: -20px;
+	left: 0;
+	position: absolute;
+	display: flex;
+	overflow: hidden;
+	width: 100%;
+}
+
+.grass img{
+	max-width: 100%;
+	max-height: 95px;
+	margin-left: -70px;
+	flex-grow: 1;
+}
+
+.sun{
+	position: absolute;
+	right: 70px;
+	top: 110px;
+	z-index: 2;
+	transform: scale(8.0)
+}
+
+.sun img{
+	max-width: 100px;
+}
+
+.wood{
+	position: absolute;
+	left: -350px;
+}
+
+.wood img{
+	/*filter: drop-shadow(16px 16px 20px red) invert(75%);*/
+	/*filter: blur(1px);*/
+}
+
+/*.rain{
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.rain img{
+	height: 100%;
+}*/
+
+@media (max-width: 1450px){
+.school_flex_cards{
+	justify-content: space-around;
+}
+
+}
+
+@media (max-width: 1050px){
+.toppage_image{
+ z-index: 3;
+}
+.sun {
+    transform: scale(10.0);
+}
+
+.wood{
+	display: none;
+}
+
+}
+
+@media (max-width: 848px){
+h1 {
+    font-size: 2.5rem;
+}
+}
+
+
+@media (max-width: 800px){
+.tb_teacher_h2, .p_advantage h2, h1 {
+    font-size: 1.5rem;
+}
+
+.grass{
+	display: none;
+}
+
+.parent_toppage h2 {
+    font-size: .8rem;
+    text-align: left;
+}
+
+.allnews {
+    padding-inline: 1rem;
+    padding-bottom: 1rem;
+}
+
+}
+
+
+@media (max-width: 470px){
+.school_flex_cards{
+	margin-inline: 1rem;
+}
+
+.sun{
+	display: none;
+	transform: scale(5.0)
+}
+
+
+}

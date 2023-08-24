@@ -1,0 +1,68 @@
+.nav_unit:first-child{
+	color: unset;
+}
+
+.nav_unit:first-child:hover{
+	color: #029863;
+}
+
+h1{text-align: center;
+	font-family: geosemibold;
+	font-size: 2.2rem;
+}
+
+
+.container{
+	    background-color: rgb(247,247,247)
+}
+
+.the_new_container{
+	/*max-width: 90%;*/
+	margin-inline: auto;
+	margin-top: 2rem;
+	margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem 1rem 0 1rem;
+}
+
+
+.n_main_image{
+	/*width: 90%;*/
+	margin-top: 1.5rem;
+	margin-inline: auto;
+}
+
+.n_main_image img{
+	width: 100%;
+	border-radius: 20px;
+	max-height: 600px;
+}
+
+.n_date_2{
+	font-size: .9rem;
+	font-family: geolight;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.n_main_text{
+	margin-top: 1rem;
+	margin-bottom: 5rem;
+	border-bottom: 2px solid;
+}
+
+.n_main_text p{
+	font-family: geolight;
+	line-height: 1.5;
+	font-size: 1rem;
+	margin-top: 10px;
+}
+
+.n_main_text h4{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.n_main_text>div{
+	margin-bottom: 2rem;
+}
