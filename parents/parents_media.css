@@ -229,4 +229,43 @@
 .pb_way_text{
 	font-size: 1rem;
 }
+
+.ca_image{
+max-height:unset;
+flex-basis:unset;
+font-size:0;
+}
+
+.ca_text{
+flex-basis:unset;
+max-height:unset;
+padding:10px
+}
+
+.course_author_main{
+flex-direction:column}
+
+.ca_image img{
+max-height:350px;
+border-radius: unset;
+font-size:0;
+}
+
+.course_authors_line{
+margin-top:1.5rem;
+align-items:flex-end}
+
+.p_scene_info .ca_text{
+padding-inline:10px}
+
+.ps_info_but button{
+margin-top: 2rem;
+margin-bottom:1rem}
+
+.pick_author{
+flex-basis:unset}
+
+.course_authors_line{
+gap:1.5rem}
+
 }
