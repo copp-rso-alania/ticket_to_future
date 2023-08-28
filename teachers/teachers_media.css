@@ -119,7 +119,7 @@
 	}
 
 	.pick_author{
-		flex-basis: 20%;
+		flex-basis: 25%;
 	}
 
 	.tbtf_2_main{
@@ -130,10 +130,6 @@
 		padding: 1rem;
 	}
 
-}
-
-
-@media(max-width: 800px){
 	.usedocs_unit{
 		flex-basis: 100%;
 	}
