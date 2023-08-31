@@ -406,7 +406,7 @@ body{
 
 
 .pick_author{
-	flex-basis: 16%;
+	flex-basis: 18%;
 	text-align: center;
 	cursor: pointer;
 }

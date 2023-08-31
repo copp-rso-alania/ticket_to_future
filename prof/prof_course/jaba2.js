@@ -3,7 +3,6 @@ let nameprof = document.getElementById('name_prof');
 let place = document.getElementsByClassName('place_study')[0];
 let profimg = document.getElementById('prof_image');
 let profdisc = document.getElementsByClassName('prof_discription')[0];
-let filename = localStorage.getItem('thepage')
 
 // location.href.split("/").slice(-1)
 
