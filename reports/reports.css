@@ -30,6 +30,9 @@
 	font-weight: bold;
 }
 
+.report_h3{
+	font-size: .9rem !important;
+}
 
 
 @media(max-width: 715px){
