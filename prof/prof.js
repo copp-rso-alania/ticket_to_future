@@ -126,3 +126,46 @@ for(let i=0; i<options.length;i++){
 // if (google.innerText == 'Вы уже заполнили форму') {
 // 	document.getElementById('ifgoog').style.height = '310px'
 // }
+
+
+
+// let form = document.getElementById('sheetdb-form');
+// form.addEventListener('submit',sendform)
+
+// function sendform(event) {
+// 		event.preventDefault();
+// 		          	fetch(form.action, {
+// 		              method : "POST",
+// 		              body: new FormData(document.getElementById("sheetdb-form")),
+// 		          }).then(
+// 		              response => response.json()
+// 		          ).then((html) => {
+// 		            // you can put any JS code here
+// 		            alert('Данные отправлены');
+// 		          });
+// }
+
+
+let form = document.getElementById('sheetdb-form');
+form.addEventListener('submit',sendform);
+
+function sendform(event){
+
+	let alldata = document.getElementsByClassName("datainput");
+
+	form.action=`https://script.google.com/macros/s/AKfycbwAtNBoflmazofruoZ95nbuIRiBlhCNk0jTW0BH1AnshSWvo1es8HO6TKCCbkxeeW4v/exec?p1=${alldata[0].value}&p2=${alldata[1].value}&p3=${alldata[2].value}&p4=${alldata[3].value}&p5=${alldata[4].value}&p6=${alldata[5].value}`;
+
+}
+
+
+let options2 = document.getElementsByTagName('option');
+
+for(let i = 0; i<options2.length; i++){
+	if(localStorage.getItem('theprof0') == options2[i].value){
+		options2[i].setAttribute('selected','');
+	}
+}
+
+// window.onbeforeunload = function(){
+// 	return false;
+// };

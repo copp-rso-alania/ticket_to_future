@@ -152,8 +152,222 @@
 			</div>
 
 
+
 			<div class="forma" id="form">
-				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZI4g7k-gL3HG_e-l5mZUzlDkZoNuOHzRTaeZFPDuM5WwHmA/viewform?embedded=true" width="100%" height="2327" frameborder="0" marginheight="0" marginwidth="0" id="ifgoog">Загрузка…</iframe>
+				<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZI4g7k-gL3HG_e-l5mZUzlDkZoNuOHzRTaeZFPDuM5WwHmA/viewform?embedded=true" width="100%" height="2327" frameborder="0" marginheight="0" marginwidth="0" id="ifgoog">Загрузка…</iframe> -->
+				
+				<form action="" method="post" id="sheetdb-form">
+					<div class="form_unit">
+						<div>
+							<div class="title_input">
+								ФИО
+							</div>
+							<div>
+								<input type="text" placeholder="Пример: Иванов Иван Иванович" required class="datainput">
+							</div>
+						</div>
+					</div>
+
+					<div class="form_unit">
+						<div>
+							<div class="title_input">
+								Дата рождения
+							</div>
+							
+							<div>
+								<input type="date" required class="datainput">
+							</div>	
+						</div>
+					</div>
+
+					<div class="form_unit">
+						<div>
+							<div class="title_input">
+								Номер телефона
+							</div>
+							<div>
+								<input type="number" required  placeholder="Пример: 8-999-999-99-99" class="datainput">
+							</div>
+						</div>
+					</div>
+
+					<div class="form_unit">
+						<div>
+							<div class="title_input">
+								Электронная почта
+							</div>
+							<div>
+								<input type="email" required placeholder="Пример: example@mail.ru" class="datainput">
+							</div>
+						</div>
+					</div>
+
+					<div class="form_unit">
+						<div class="title_input">
+							Ваше текущее образование
+						</div>
+						<input type="text" style="display: none;">
+						<div>
+							<select name="data[Образование]" class="datainput">
+								<option value="Среднее (школьное)">
+									Среднее (школьное)
+								</option>
+								<option value="Среднее профессиональное (оконченное)">
+									Среднее профессиональное (оконченное)
+								</option>
+								<option value="Получаю среднее профессиональное">
+									Получаю среднее профессиональное
+								</option>
+								<option value="Высшее (оконченное)">
+									Высшее (оконченное)
+								</option>
+								<option value="Получаю высшее">
+									Получаю высшее
+								</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form_unit">
+						<div class="title_input">
+							Профессиональное направление
+						</div>
+						<!-- <input type="text" style="display: none;"> -->
+						<div>
+							<select name="data[Направление]" class="datainput">
+								<option value="Электрохимик">Электрохимик</option>
+								<option value="Инженер по 3D печати">Инженер по 3D печати</option>
+								<option value="Дизайнер виртуальных миров">
+									Дизайнер виртуальных миров
+								</option>
+								<option value="Гейм-дизайнер">
+									Гейм-дизайнер
+								</option>
+								<option value="Бэкенд-разработчик">
+									Бэкенд-разработчик
+								</option>
+								<option value="Специалист по информационной безопасности">
+									Специалист по информационной безопасности
+								</option>
+								<option value="Специалист по информационным кабельным сетям">
+									Специалист по информационным кабельным сетям
+								</option>
+								<option value="Технолог продуктов общественного питания массового изготовления и специализированных пищевых продуктов">
+									Технолог продуктов общественного питания массового изготовления и специализированных пищевых продуктов
+								</option>
+								<option value="Инженер-электрик">
+									Инженер-электрик
+								</option>
+								<option value="Инженер по охране окружающей среды">
+									Инженер по охране окружающей среды
+								</option>
+								<option value="Лаборант по контролю качества сырья, реактивов, промежуточных продуктов, готовой продукции, отходов производства">
+									Лаборант по контролю качества сырья, реактивов, промежуточных продуктов, готовой продукции, отходов производства
+								</option>
+								<option value="Лаборант химического анализа">
+									Лаборант химического анализа
+								</option>
+								<option value="Специалист по экологической безопасности">
+									Специалист по экологической безопасности
+								</option>
+								<option value="Почвовед">
+									Почвовед
+								</option>
+								<option value="Эколог">
+									Эколог
+								</option>
+								<option value="Фармаколог">
+									Фармаколог
+								</option>
+								<option value="Фармацевт">
+									Фармацевт
+								</option>
+								<option value="Разработчик Web и мультимедийных приложений">
+									Разработчик Web и мультимедийных приложений
+								</option>
+								<option value="Менеджер по качеству">
+									Менеджер по качеству
+								</option>
+								<option value="Фронтенд-разработчик">
+									Фронтенд-разработчик
+								</option>
+								<option value="Мастер по ремонту и обслуживанию автомобилей">
+									Мастер по ремонту и обслуживанию автомобилей
+								</option>
+								<option value="Юрист">
+									Юрист
+								</option>
+								<option value="Предприниматель малого бизнеса">
+									Предприниматель малого бизнеса
+								</option>
+								<option value="Бухгалтер">
+									Бухгалтер
+								</option>
+								<option value="Банковский служащий">
+									Банковский служащий
+								</option>
+								<option value="Специалист индустрии красоты: парикмахер">
+									Специалист индустрии красоты: парикмахер
+								</option>
+								<option value="Звукорежиссер">
+									Звукорежиссер
+								</option>
+								<option value="Журналист">
+									Журналист
+								</option>
+								<option value="Педагог">
+									Педагог
+								</option>
+								<option value="Официант">
+									Официант
+								</option>
+								<option value="Менеджер по туризму">
+									Менеджер по туризму
+								</option>
+								<option value="Психолог">
+									Психолог
+								</option>
+								<option value="Гид (экскурсовод)">
+									Гид (экскурсовод)
+								</option>
+								<option value="Оператор БПЛА">
+									Оператор БПЛА
+								</option>
+								<option value="Сварщик">
+									Сварщик
+								</option>
+								<option value="Плотник">
+									Плотник
+								</option>
+								<option value="Штукатур">
+									Штукатур
+								</option>
+								<option value="Токарь-универсал">
+									Токарь-универсал
+								</option>
+								<option value="Портной">
+									Портной
+								</option>
+								<option value="Слесарь-сантехник">
+									Слесарь-сантехник
+								</option>
+								<option value="Электромонтер по ремонту и обслуживанию электрооборудования">
+									Электромонтер по ремонту и обслуживанию электрооборудования
+								</option>
+								<option value="Маляр">
+									Маляр
+								</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form_unit">
+						<button type="submit">
+							Отправить
+						</button>
+					</div>
+						
+				</form>
 			</div>
 			
 

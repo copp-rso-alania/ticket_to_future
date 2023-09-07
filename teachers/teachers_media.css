@@ -143,12 +143,12 @@
 	}
 
 	.parent_toppage h2,.p_note_left p{
-		font-size: .8rem;
+		font-size: .9rem;
 		text-align: left;
 	}
 
 	.allnews{
-		padding-inline: 1rem;
+		padding-inline: 10px;
 		padding-bottom: 2rem;
 	}
 
@@ -248,10 +248,18 @@
 	}
 
 	.p_adv_unit{
-		    margin-left: 3rem;
+		    flex-basis: unset;
 	}
 
 	.tb_text p{
 		text-align: left;
+	}
+
+	.p_notepad{
+		padding: .5rem;
+	}
+
+	.pre_p_notepad{
+		padding: .5rem;
 	}
 }

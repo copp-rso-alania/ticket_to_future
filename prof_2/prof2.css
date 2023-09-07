@@ -93,7 +93,7 @@
 }
 
 body{
-	min-width: 400px;
+	min-width: 340px;
 }
 
 h1{
@@ -157,50 +157,8 @@ h1{
 	box-shadow: 0px 0px 20px white;
 }
 
-.t_top_buts{
-	display: flex;
-	justify-content: center;
-	gap: 1rem;
-}
-
-.t_top_buts button{
-	padding: 1rem 1.8rem;
-}
-
-
-.title_choose{
-	text-align: center;
-	font-size: 2.2rem;
-}
-
-.choose_wednesday{
-	max-width: 1000px;
-	max-width: 80%;
-	margin: 0 auto;
-}
-
-.choose_options{
-	display: flex;
-	/*justify-content: space-around;*/
-	flex-wrap: wrap;
-	gap: .8rem;
-	margin: 1.3rem 0 1.8rem 0;
-}
-
-.option_unit{
-	background-color: rgb(242,242,242);
-	padding: 10px 20px;
-	border-radius: 20px;
-	cursor: pointer;
-	transition-duration: .2s;
-}
-
-.option_unit:hover{
-	background-color: silver;
-}
-
-.chosen{
-	background-color: silver;
+.allnews{
+	padding-bottom: 3rem;
 }
 
 .forma{
@@ -238,10 +196,6 @@ textarea{
 	width: 100%;
 	border-radius: 5px;
 	resize: none;
-}
-
-.form_unit:has(button){
-	/* text-align: center; */
 }
 
 .form_unit button{
@@ -283,6 +237,7 @@ h1 {
 
 .allnews {
     padding-bottom: 2rem;
+	padding-inline: 10px;
 }
 }
 
@@ -293,7 +248,7 @@ h1 {
 }
 
 .parent_toppage h2 {
-    font-size: .8rem;
+    font-size: .9rem;
     text-align: left;
     margin-top: 10px;
 }

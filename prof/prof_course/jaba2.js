@@ -393,7 +393,8 @@ for(let i=0; i<profproba.length;i++){
 		title[0].innerHTML = profproba[i][0];
 		place.innerHTML = profproba[i][1];
 		profimg.src = profproba[i][2];
-		profdisc.innerHTML = profproba[i][3]
+		profdisc.innerHTML = profproba[i][3];
+		localStorage.setItem('theprof0',profproba[i][0])
 
 	}
 }

@@ -93,7 +93,7 @@
 }
 
 body{
-	min-width: 400px;
+	min-width: 340px;
 }
 
 h1{
@@ -211,6 +211,74 @@ h1{
 
 
 
+
+
+.forma form{
+	max-width: 550px;
+    margin: 0 auto;
+}
+
+.form_unit:not(:last-child){
+	margin-bottom: 1.3rem;
+}
+
+.form_unit input{
+	width: 100%;
+	height: 2rem;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	text-indent: .5rem;
+	font-size: .8rem;
+}
+
+.title_input{
+	margin-bottom: 8px;
+}
+
+.form_unit button{
+	width: 100%;
+	font-size: 1.2rem;
+	padding: .6rem 0;
+	cursor: pointer;
+	background-color: rgba(106,233,86, .5);
+	border-radius: 5px;
+	border: none;
+	transition-duration: .5s;
+}
+
+.form_unit button:hover{
+	background-color: rgba(106,233,86,1);
+}
+
+.form_unit select{
+	max-width: 100%;
+	font-size: .8rem;
+	height: 2rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
+	color: gray;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1450px){
 .school_flex_cards{
 	justify-content: space-around;
@@ -222,8 +290,17 @@ h1 {
     font-size: 2.5rem;
 }
 
+.choose_wednesday{
+	max-width: 90%;
+}
+
+.choose_options{
+	justify-content: space-around;
+}
+
 .allnews {
     padding-bottom: 2rem;
+	padding-inline: 10px;
 }
 }
 
@@ -234,9 +311,13 @@ h1 {
 }
 
 .parent_toppage h2 {
-    font-size: .8rem;
+    font-size: .9rem;
     text-align: left;
     margin-top: 10px;
+}
+
+.forma form{
+	padding-inline: 1rem;
 }
 
 }

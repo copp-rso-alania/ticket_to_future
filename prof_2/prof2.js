@@ -58,19 +58,27 @@ for(let i=0; i<zapis.length; i++){
 let form = document.getElementById('sheetdb-form');
 form.addEventListener('submit',sendform)
 
-function sendform(event) {
-		event.preventDefault();
-		          	fetch(form.action, {
-		              method : "POST",
-		              body: new FormData(document.getElementById("sheetdb-form")),
-		          }).then(
-		              response => response.json()
-		          ).then((html) => {
-		            // you can put any JS code here
-		            alert('Данные отправлены');
-		          });
-}
+// function sendform(event) {
+// 		event.preventDefault();
+// 		          	fetch(form.action, {
+// 		              method : "POST",
+// 		              body: new FormData(document.getElementById("sheetdb-form")),
+// 		          }).then(
+// 		              response => response.json()
+// 		          ).then((html) => {
+// 		            // you can put any JS code here
+// 		            alert('Данные отправлены');
+// 		          });
+// }
 
+
+function sendform(event){
+
+	let alldata = document.getElementsByClassName("datainput");
+
+	form.action=`https://script.google.com/macros/s/AKfycbw4CJMrw-57jvIh-6-9ZwQwUfjJ5E87CvHPjHIsUBfq3hhGvFhDX3tvFFFuMoXxbbHn5Q/exec?p1=${alldata[0].value}&p2=${alldata[1].value}&p3=${alldata[2].value}&p4=${alldata[3].value}&p5=${alldata[4].value}&p6=${alldata[5].value}`;
+
+}
 
 
 let options = document.getElementsByTagName('option')
