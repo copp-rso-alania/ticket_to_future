@@ -146,16 +146,27 @@ for(let i=0; i<options.length;i++){
 // }
 
 
-let form = document.getElementById('sheetdb-form');
-form.addEventListener('submit',sendform);
+// let form = document.getElementById('sheetdb-form');
+// form.addEventListener('submit',sendform);
 
-function sendform(event){
+// function sendform(event){
 
-	let alldata = document.getElementsByClassName("datainput");
+// 	let alldata = document.getElementsByClassName("datainput");
 
-	form.action=`https://script.google.com/macros/s/AKfycbwAtNBoflmazofruoZ95nbuIRiBlhCNk0jTW0BH1AnshSWvo1es8HO6TKCCbkxeeW4v/exec?p1=${alldata[0].value}&p2=${alldata[1].value}&p3=${alldata[2].value}&p4=${alldata[3].value}&p5=${alldata[4].value}&p6=${alldata[5].value}`;
+// 	form.action=`https://script.google.com/macros/s/AKfycbwAtNBoflmazofruoZ95nbuIRiBlhCNk0jTW0BH1AnshSWvo1es8HO6TKCCbkxeeW4v/exec?p1=${alldata[0].value}&p2=${alldata[1].value}&p3=${alldata[2].value}&p4=${alldata[3].value}&p5=${alldata[4].value}&p6=${alldata[5].value}`;
 
-}
+// }
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyISWPnerH6qede6ksTUUntgUXqf-aeCQsIqgKd7wRbe33uChoQ14Dncvht_ORhJnfCgQ/exec'
+			const form = document.forms['submit-to-google-sheet']
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Форма отправлена"))
+				.then(() => {  window.location.reload()})
+				.catch(error => console.error('Error!', error.message))
+			})
 
 
 let options2 = document.getElementsByTagName('option');

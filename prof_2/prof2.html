@@ -117,14 +117,16 @@
 			<div class="forma" id="form">
 				<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZI4g7k-gL3HG_e-l5mZUzlDkZoNuOHzRTaeZFPDuM5WwHmA/viewform?embedded=true" width="100%" height="2327" frameborder="0" marginheight="0" marginwidth="0" id="ifgoog">Загрузка…</iframe> -->
 				
-				<form action="https://sheetdb.io/api/v1/pn60tebnswrhx" method="post" id="sheetdb-form">
+				<!-- <form action="https://sheetdb.io/api/v1/pn60tebnswrhx" method="post" id="sheetdb-form" name="submit-to-google-sheet"> -->
+
+				<form action="https://script.google.com/macros/s/AKfycbwBTGB4XgqdZdzoSFqFXzvqXe6pPy23XxTvnbi0brINMuT6su_kYf7sEyuQC2E7fdkI/exec" method="post" id="sheetdb-form" name="submit-to-google-sheet">
 					<div class="form_unit">
 						<div>
 							<div class="title_input">
 								Школа
 							</div>
 							<div>
-								<input type="text" placeholder="Пример: МБОУ СОШ N1" required name="data[Школа]" class="datainput">
+								<input type="text" placeholder="Пример: МБОУ СОШ N1" required name="Школа" class="datainput">
 							</div>
 						</div>
 					</div>
@@ -136,7 +138,7 @@
 							</div>
 							
 							<div>
-								<input type="text" placeholder="Пример: Иванов Иван Иванович" required name="data[ФИО ответственного лица]" class="datainput">
+								<input type="text" placeholder="Пример: Иванов Иван Иванович" required name="ФИО ответственного лица" class="datainput">
 							</div>	
 						</div>
 					</div>
@@ -147,7 +149,7 @@
 								Номер телефона ответственного лица
 							</div>
 							<div>
-								<input type="number" required name="data[Номер телефона ответственного лица]" placeholder="Пример: 8-999-999-99-99" class="datainput">
+								<input type="number" required name="Номер телефона ответственного лица" placeholder="Пример: 8-999-999-99-99" class="datainput">
 							</div>
 						</div>
 					</div>
@@ -158,7 +160,7 @@
 						</div>
 						<input type="text" style="display: none;">
 						<div>
-							<select name="data[Профессиональное направление]" class="datainput">
+							<select name="Профессиональное направление" class="datainput">
 								<option value="Оператор ЭВМ (с освоением модуля по компетенции «Основы 3d-моделирования»)">
 									Оператор ЭВМ (с освоением модуля по компетенции «Основы 3d-моделирования»)
 								</option>
@@ -187,7 +189,7 @@
 								Список учеников (до 20 человек, 8-11 класса)
 							</div>
 							<div>
-								<textarea required name="data[Список учеников]" rows="10" placeholder="Вставьте в это поле список учеников (до 20 человек, 8-11 класса)" class="datainput"></textarea>
+								<textarea required name="Список учеников" rows="10" placeholder="Вставьте в это поле список учеников (до 20 человек, 8-11 класса)" class="datainput"></textarea>
 							</div>
 						</div>
 						

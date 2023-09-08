@@ -156,14 +156,14 @@
 			<div class="forma" id="form">
 				<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZI4g7k-gL3HG_e-l5mZUzlDkZoNuOHzRTaeZFPDuM5WwHmA/viewform?embedded=true" width="100%" height="2327" frameborder="0" marginheight="0" marginwidth="0" id="ifgoog">Загрузка…</iframe> -->
 				
-				<form action="" method="post" id="sheetdb-form">
+				<form action="" method="post" id="sheetdb-form" name="submit-to-google-sheet">
 					<div class="form_unit">
 						<div>
 							<div class="title_input">
 								ФИО
 							</div>
 							<div>
-								<input type="text" placeholder="Пример: Иванов Иван Иванович" required class="datainput">
+								<input type="text" placeholder="Пример: Иванов Иван Иванович" required class="datainput" name="ФИО">
 							</div>
 						</div>
 					</div>
@@ -175,7 +175,7 @@
 							</div>
 							
 							<div>
-								<input type="date" required class="datainput">
+								<input type="date" required class="datainput" name="Дата рождения">
 							</div>	
 						</div>
 					</div>
@@ -186,7 +186,7 @@
 								Номер телефона
 							</div>
 							<div>
-								<input type="number" required  placeholder="Пример: 8-999-999-99-99" class="datainput">
+								<input type="number" required  placeholder="Пример: 8-999-999-99-99" class="datainput" name="Номер телефона">
 							</div>
 						</div>
 					</div>
@@ -197,7 +197,7 @@
 								Электронная почта
 							</div>
 							<div>
-								<input type="email" required placeholder="Пример: example@mail.ru" class="datainput">
+								<input type="email" required placeholder="Пример: example@mail.ru" class="datainput" name="Электронная почта">
 							</div>
 						</div>
 					</div>
@@ -208,7 +208,7 @@
 						</div>
 						<input type="text" style="display: none;">
 						<div>
-							<select name="data[Образование]" class="datainput">
+							<select name="Образование" class="datainput">
 								<option value="Среднее (школьное)">
 									Среднее (школьное)
 								</option>
@@ -234,7 +234,7 @@
 						</div>
 						<!-- <input type="text" style="display: none;"> -->
 						<div>
-							<select name="data[Направление]" class="datainput">
+							<select name="Направление" class="datainput">
 								<option value="Электрохимик">Электрохимик</option>
 								<option value="Инженер по 3D печати">Инженер по 3D печати</option>
 								<option value="Дизайнер виртуальных миров">
