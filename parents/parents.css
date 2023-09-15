@@ -401,7 +401,7 @@ body{
 	/*align-items: flex-end;*/
 	flex-wrap: wrap;
 	margin-top: 2.5rem;
-	gap: 2rem;
+	/* gap: 2rem; */
 }
 
 
@@ -412,7 +412,7 @@ body{
 }
 
 .p_author_image img{
-	width: 60%;
+	width: 100px;
 	border-radius: 20px;
 	max-height: 80px;
 }

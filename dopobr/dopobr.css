@@ -6,7 +6,7 @@
 	color: #029863;
 }
 
-.nav_unit:nth-child(9){
+.nav_unit:nth-child(10){
 	color: #029863;
 }
 
@@ -115,7 +115,7 @@ h1{
 
 .toppage_image img{
 	/* max-width: 80%; */
-	width: 60%;
+	width: 70%;
 	max-height: 500px;
 	border-radius: 30px;
 }
@@ -136,7 +136,7 @@ h1{
 	margin-bottom: 1.5rem;*/
 	max-width: 800px;
 	margin: .9rem auto 0rem auto;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 }
 
 .parent_toppage button{
@@ -163,14 +163,11 @@ h1{
 
 .forma{
 	max-width: 850px;
-	margin-top: 3rem;
-	margin-bottom: 3rem;
 	margin-inline: auto;
 	background-color: rgb(226, 238, 224);
 	padding: 2rem 0;
 	border-radius: 20px;
 }
-
 
 .forma form{
 	max-width: 550px;

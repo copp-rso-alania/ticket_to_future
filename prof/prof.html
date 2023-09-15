@@ -63,6 +63,11 @@
 							Профобучение
 						</a>			
 					</div>
+					<div class="nav_unit">
+						<a href="../dopobr/dopobr.html">
+							Допобразование
+						</a>			
+					</div>
 				</nav>		
 		</header>
 
@@ -77,7 +82,7 @@
 				</div>
 
 				<h1>
-					Каталог профпроб
+					Профпробы
 				</h1>
 
 				<h2>
@@ -160,10 +165,10 @@
 					<div class="form_unit">
 						<div>
 							<div class="title_input">
-								ФИО
+								ФИО ответственного лица
 							</div>
 							<div>
-								<input type="text" placeholder="Пример: Иванов Иван Иванович" required class="datainput" name="ФИО">
+								<input type="text" placeholder="Пример: Иванов Иван Иванович" required class="datainput" name="ФИО ответственного лица">
 							</div>
 						</div>
 					</div>
@@ -171,22 +176,10 @@
 					<div class="form_unit">
 						<div>
 							<div class="title_input">
-								Дата рождения
-							</div>
-							
-							<div>
-								<input type="date" required class="datainput" name="Дата рождения">
-							</div>	
-						</div>
-					</div>
-
-					<div class="form_unit">
-						<div>
-							<div class="title_input">
-								Номер телефона
+								Номер телефона ответственного лица
 							</div>
 							<div>
-								<input type="number" required  placeholder="Пример: 8-999-999-99-99" class="datainput" name="Номер телефона">
+								<input type="number" required  placeholder="Пример: 8-999-999-99-99" class="datainput" name="Номер телефона ответственного лица">
 							</div>
 						</div>
 					</div>
@@ -194,15 +187,26 @@
 					<div class="form_unit">
 						<div>
 							<div class="title_input">
-								Электронная почта
+								Школа
 							</div>
 							<div>
-								<input type="email" required placeholder="Пример: example@mail.ru" class="datainput" name="Электронная почта">
+								<input type="text" required placeholder="Пример: МБОУ СОШ N38" class="datainput" name="Школа">
 							</div>
 						</div>
 					</div>
 
 					<div class="form_unit">
+						<div>
+							<div class="title_input">
+								Класс
+							</div>
+							<div>
+								<input type="text" required placeholder="Пример: 8Б" class="datainput" name="Класс">
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="form_unit">
 						<div class="title_input">
 							Ваше текущее образование
 						</div>
@@ -226,7 +230,7 @@
 								</option>
 							</select>
 						</div>
-					</div>
+					</div> -->
 
 					<div class="form_unit">
 						<div class="title_input">
@@ -362,6 +366,17 @@
 					</div>
 
 					<div class="form_unit">
+						<div>
+							<div class="title_input">
+								Список учеников (до 20 человек, 8-11 класса)
+							</div>
+							<div>
+								<textarea required name="Список учеников" rows="10" placeholder="Вставьте в это поле список учеников (до 20 человек, 8-11 класса)" class="datainput"></textarea>
+							</div>
+						</div>
+					</div>
+
+					<div class="form_unit">
 						<button type="submit">
 							Отправить
 						</button>
@@ -397,6 +412,11 @@
 				<div class="foot_image">
 					<a href="https://xn--80aapampemcchfmo7a3c9ehj.xn--p1ai/" target="_blank">
 						<img src="../images/footer-nationprojects.svg" alt="">
+					</a>
+				</div>
+				<div class="foot_image">
+					<a href="https://minobrnauki.gov.ru/?utm_" target="_blank">
+						<img src="../images/minobr.svg">
 					</a>
 				</div>
 
