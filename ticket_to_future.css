@@ -51,7 +51,7 @@ header{
 
 nav{
 	display: flex;
-	column-gap: 2rem;
+	column-gap: 1.7rem;
 	row-gap: .8rem;
 	align-items: center;
 	flex-wrap: wrap;

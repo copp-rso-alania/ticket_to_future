@@ -28,7 +28,7 @@
 					</div>
 					<div class="nav_unit">
 						<a href="../reports/reports.html">
-							Отчеты
+							Документы
 						</a>
 					</div>
 					<div class="nav_unit line_unit">
@@ -682,7 +682,7 @@
 									</h2>
 
 									<p class="ca_text_change"> 
-										<span>Руководитель проекта.</span>
+										<span style="display: block;">Руководитель проекта. Руководитель Центра ОПП РСО-Алания.</span> 
 									</p>
 								</div>
 							</div>
@@ -700,6 +700,7 @@
 
 									<div class="hiddeninfo" style="display: none;">
 										<div>Руководитель проекта.</div>
+										Руководитель Центра ОПП РСО-Алания.
 									</div>
 									</a>
 								</div>
@@ -716,6 +717,7 @@
 
 									<div class="hiddeninfo" style="display: none;">
 										<div>Администратор проекта.</div>
+										Заместитель руководителя Центра ОПП РСО-Алания, доцент кафедры экономики и экономической безопасности ГГАУ.
 									</div>
 									</a>
 								</div>
@@ -733,7 +735,7 @@
 									<div class="hiddeninfo" style="display: none;">
 										<div>Координатор по внедрению профориентационного минимума. </div>
 										Методист, мастер производственного обучения Центра ОПП РСО-Алания. 
-										Окончила Российский государственный профессионально-педагогический университет, г. Екатеринбург
+										Окончила Российский государственный профессионально-педагогический университет, г. Екатеринбург.
 										
 									</div>
 									</a>
@@ -1182,6 +1184,8 @@
 let autinfo = document.getElementsByClassName('ca_text_change');
 let theauthor = document.getElementsByClassName('pick_author');
 
+autinfo[0].innerHTML = document.getElementsByClassName('p_author_disc ')[0].innerHTML
+		autinfo[1].innerHTML = document.getElementsByClassName('hiddeninfo')[0].innerHTML
 
 for(let i = 0; i<theauthor.length; i++){
 	theauthor[i].onclick = function() {
