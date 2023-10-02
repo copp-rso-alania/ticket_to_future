@@ -27,6 +27,10 @@
 	.allnews{
 		padding-top: 2rem;
 	}
+
+	.n_block{
+		overflow: hidden;
+	}
 }
 
 
