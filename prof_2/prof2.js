@@ -82,16 +82,16 @@ for(let i=0; i<zapis.length; i++){
 // }
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwBTGB4XgqdZdzoSFqFXzvqXe6pPy23XxTvnbi0brINMuT6su_kYf7sEyuQC2E7fdkI/exec'
-			const form = document.forms['submit-to-google-sheet']
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbwBTGB4XgqdZdzoSFqFXzvqXe6pPy23XxTvnbi0brINMuT6su_kYf7sEyuQC2E7fdkI/exec'
+// 			const form = document.forms['submit-to-google-sheet']
 		  
-			form.addEventListener('submit', e => {
-			  e.preventDefault()
-			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-				.then(response => alert("Форма отправлена"))
-				.then(() => {  window.location.reload()})
-				.catch(error => console.error('Error!', error.message))
-			})
+// 			form.addEventListener('submit', e => {
+// 			  e.preventDefault()
+// 			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+// 				.then(response => alert("Форма отправлена"))
+// 				.then(() => {  window.location.reload()})
+// 				.catch(error => console.error('Error!', error.message))
+// 			})
 
 
 

@@ -172,7 +172,7 @@ h1{
 }
 
 
-.forma form{
+/* .forma form{
 	max-width: 550px;
     margin: 0 auto;
 }
@@ -223,7 +223,7 @@ textarea{
     border: 1px solid transparent;
 	color: gray;
 	
-}
+} */
 
 
 @media (max-width: 1450px){
