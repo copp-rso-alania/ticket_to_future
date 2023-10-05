@@ -268,6 +268,8 @@ if (document.body.contains(document.getElementsByClassName('the_new_container')[
 
 	`
 
+	document.querySelector('title').innerText = news[localca][2]
+
 
 }
 
