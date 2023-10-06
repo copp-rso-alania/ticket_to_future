@@ -64,7 +64,7 @@
 	   ['Педагог','https://i.ibb.co/rp2cy4t/pedagog.jpg','smart'],
 	   ['Журналист','https://i.ibb.co/jgQdH61/journalist.jpg','creative'],
 	   ['Звукорежиссер','https://i.ibb.co/jy7xsKj/zvukorezh.jpg','creative'],
-	   ['Редактор','https://i.ibb.co/pwYY6BG/redactor.jpg"','creative'],
+	   ['Редактор','https://i.ibb.co/pwYY6BG/redactor.jpg','creative'],
 	   ['Специалист индустрии красоты: парикмахер','https://i.ibb.co/3TTFRMc/barber.jpg','social'],
 	   ['Банковский служащий','https://i.ibb.co/1RMJdt4/band.jpg','business'],
 	   ['Бухгалтер','https://i.ibb.co/sQqRBKF/buhgalter.jpg','business'],
