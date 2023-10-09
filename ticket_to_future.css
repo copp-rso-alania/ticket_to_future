@@ -231,3 +231,12 @@ footer{
 	padding: 0;
 	display: block;
 }
+
+.vidos_bilet iframe{
+	width: 100%;
+	min-height: 300px;
+}
+
+.vidos_bilet{
+	margin-top: 2rem;
+}
