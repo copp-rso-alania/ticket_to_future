@@ -275,6 +275,10 @@ h1{
 	padding-bottom: 0rem;
 }
 
+.profigrad_outer{
+	margin-inline: 1rem;
+}
+
 /* .wood img{
 	filter: drop-shadow(16px 16px 20px red) invert(75%);
 	filter: blur(1px);
@@ -343,8 +347,11 @@ h1 {
 
 
 @media (max-width: 470px){
-.school_flex_cards{
-	margin-inline: 1rem;
+.school_flex_cards,.kinco,.profigrad_outer{
+	margin-inline: .7rem;
+}
+.toppage_image img{
+	max-width: 100%;
 }
 
 .sun{
@@ -352,5 +359,10 @@ h1 {
 	transform: scale(5.0)
 }
 
-
+.allnews,.main_school_cont .djurnal{
+    padding-inline: .7rem;
+}
+.main_school_cont .djurnal{
+	margin-bottom: 1.5rem;
+}
 }

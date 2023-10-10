@@ -221,6 +221,10 @@
 		padding-bottom: 1rem;
 	}
 
+	.tap_cards,.t_bucklet,.tap_video,.p_advantage{
+		margin-inline:.7rem;
+	}
+
 	.tapc_unit h2{
 		font-size: 1.2rem;
 	}
@@ -255,11 +259,8 @@
 		text-align: left;
 	}
 
-	.p_notepad{
+	.p_notepad,.pre_p_notepad{
 		padding: .5rem;
 	}
 
-	.pre_p_notepad{
-		padding: .5rem;
-	}
 }

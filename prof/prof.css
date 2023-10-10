@@ -228,7 +228,7 @@ h1{
 	width: 100%;
 	height: 2rem;
 	border-radius: 5px;
-	border: 1px solid transparent;
+	border: none;
 	text-indent: .5rem;
 	font-size: .8rem;
 }
@@ -243,7 +243,7 @@ h1{
 	padding: .6rem 0;
 	cursor: pointer;
 	background-color: rgba(106,233,86, .5);
-	border-radius: 5px;
+	border-radius: 20px;
 	border: none;
 	transition-duration: .5s;
 }
@@ -329,11 +329,15 @@ h1 {
 
 @media (max-width: 470px){
 .school_flex_cards{
-	margin-inline: 1rem;
+	margin-inline: .6rem;
 }
 
 .title_choose{
 	font-size: 1.6rem;
+}
+
+.forma form{
+	padding-inline:.6rem;
 }
 
 }
