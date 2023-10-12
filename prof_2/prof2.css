@@ -114,17 +114,17 @@ h1{
 
 
 .toppage_image img{
-	/* max-width: 80%; */
-	width: 60%;
+	max-width: 60%;
+	/* width: 60%; */
 	max-height: 500px;
 	border-radius: 30px;
 }
 
-.toppage_image video{
+/* .toppage_image video{
 	min-height: 200px;
 	max-height: 400px;
 	max-width: 100%;
-}
+} */
 
 .toppage_image{
 	max-width: 1000px;
