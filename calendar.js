@@ -54,6 +54,8 @@ function CalendarControl() {
         calendarControl.attachEventsOnNextPrev();
       },
       navigateToCurrentMonth: function () {
+        // todayDate.click();
+        // todayDate.click();
         document.location.reload();
         // let currentMonth = calendarControl.localDate.getMonth();
         // let currentYear = calendarControl.localDate.getFullYear();
@@ -239,6 +241,7 @@ function CalendarControl() {
     (strelka)=>{
         strelka.addEventListener('click',()=>{
             datas = document.querySelectorAll(".number-item");
+            colorize()
             fordatas();
         })
 
@@ -246,14 +249,31 @@ function CalendarControl() {
     }
   )
 
+
+
+
+  function colorize(){
+    month = document.querySelector('.calendar-month-label').innerText;
+    year =  document.querySelector('.calendar-year-label');
+    datas.forEach(element => {
+      news.forEach(element2=>{
+        if(element.innerText +  ' ' + month.toLocaleLowerCase().substring(0,3)+' '+year.innerText == element2[1].split(" ")[0]+' '+element2[1].split(" ")[1].substring(0,3)+' '+element2[1].slice(-4)){
+          element.style.backgroundColor = 'orange'
+        }
+      })
+    })
+  }
+
+  colorize()
   
 function fordatas(){
-    datas.forEach(element => {
+    datas.forEach(element => { 
         
         element.addEventListener('click',()=>{
             datas.forEach(elem=>{
                 elem.style.backgroundColor = 'unset'
             })
+            colorize()
             element.style.backgroundColor = 'green';
             element.style.borderRadius = '4px';
 
@@ -277,6 +297,13 @@ function fordatas(){
             
     
             news.forEach(element2=>{ 
+
+              console.log(element.innerText +  ' ' + month.toLocaleLowerCase().substring(0,3)+' '+year.innerText);
+                console.log(element2[1].split(" ")[0]+' '+element2[1].split(" ")[1].substring(0,3)+' '+element2[1].slice(-4));
+
+              // if(element.innerText +  ' ' + month.toLocaleLowerCase().substring(0,3)+' '+year.innerText == element2[1].split(" ")[0]+' '+element2[1].split(" ")[1].substring(0,3)+' '+element2[1].slice(-4)){
+              //   element.style.backgroundColor = 'orange'
+              // }
                 
                 if((element2[1].split(" ")[0] == element.innerText) && 
                 (element2[1].split(" ")[1].substring(0,3) == month.toLocaleLowerCase().substring(0,3)) &&
@@ -300,6 +327,9 @@ function fordatas(){
         })
       });
 }
- 
+
+
+
 
 fordatas();
+
