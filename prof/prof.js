@@ -208,6 +208,9 @@ for(let i=0; i<options.length;i++){
 // }
 
 
+document.querySelector('#datedef').valueAsDate = new Date();
+
+
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyISWPnerH6qede6ksTUUntgUXqf-aeCQsIqgKd7wRbe33uChoQ14Dncvht_ORhJnfCgQ/exec'
 			const form = document.forms['submit-to-google-sheet']
 			form.addEventListener('submit', e => {
