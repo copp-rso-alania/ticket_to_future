@@ -36,6 +36,7 @@
 
 .calendar-inner {
     padding: 10px 10px;
+    user-select: none;
 }
 
 .calendar .calendar-inner .calendar-body {
