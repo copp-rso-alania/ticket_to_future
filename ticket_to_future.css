@@ -137,7 +137,7 @@ h2,h3,h4,h5{
 
 .n_image img{
 	width: 100%;
-	max-height: 200px;
+	height: 200px;
 	border-radius: 10px;
 }
 
@@ -219,7 +219,7 @@ footer{
 
 
 .n_block{max-height: 380px;
-    overflow: auto;}
+    overflow: hidden;}
 
 .n_block::-webkit-scrollbar { width: 0; }
 
