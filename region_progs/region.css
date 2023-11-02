@@ -11,6 +11,10 @@
 }
 
 
+body{
+    min-width: 340px;
+}
+
 .n_block{
 	padding: 10px;
 	max-height: unset;
@@ -69,11 +73,27 @@
 	background-color: rgb(242,242,242);
 }
 
+.screen_pics{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.screen_pic_unit{
+    margin-inline: .5rem;;
+}
+
+.screen_pics img{
+    max-width: 100%;
+    min-height: 300px;
+}
 
 @media(max-width: 715px){
 	.n_text{
 		min-height: unset;
 	}
+    .screen_pics{
+        margin-top: 2rem;
+    }
 }
 
 @media(max-width: 500px){
