@@ -56,11 +56,11 @@ nav{
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-inline: 2px;
+	margin: .5rem .8rem .8rem .8rem;
 }
 
 .nav_unit{
-	font-size: 1rem;
+	font-size: 1.1rem;
 	/*letter-spacing: .3px;*/
 	/*font-weight: bold;*/
 	font-family: geo;
@@ -87,7 +87,8 @@ nav{
 
 
 .image_top img{
-	max-width: 120px;
+	/* max-width: 120px; */
+	width: 200px;
 }
 
 

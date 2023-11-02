@@ -39,6 +39,10 @@
 		font-size: .9rem;
 	}
 
+	.nav_unit{
+		font-size: 1rem;
+	}
+
 	.n_text p{
 		font-size: .7rem;
 	}
@@ -76,6 +80,10 @@
 		/* border-top: 2px solid; */
 		font-size: 0;
 		padding-top: 0rem;
+	}
+
+	.image_top img{
+		max-width: 150px;
 	}
 
 }
