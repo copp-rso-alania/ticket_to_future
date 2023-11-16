@@ -899,10 +899,72 @@ for(let i= 0; i<=news.length-1;i++){
 }
 }
 
-
 let slash = '../';
 
+
 if (document.body.contains(document.getElementsByClassName('the_new_container')[0])) {
+
+
+
+	if(window.location.hash){
+
+		let hashnew = news.length - Number(window.location.hash.substring(1));
+
+		console.log(news[hashnew])
+
+
+		if(news[hashnew][0][0]=='i'){
+			slash = '../'}
+		else{slash = ''}
+
+		document.getElementsByClassName('the_new_container')[0].innerHTML = `
+			<h1>
+				${news[hashnew][2]}
+			</h1>
+
+			<div class="n_date_2">
+				${news[hashnew][1]}
+			</div>
+
+			<div class="n_main_image" name="changedata">
+				<img src="${slash}${news[hashnew][0]}">
+			</div>
+			
+			
+			<div class="n_main_text">
+				<div class="only_new_disc">
+					<p>
+						${news[hashnew][3]}
+					</p>
+				</div>
+
+				<div class="vidos_bilet">
+					<iframe src="${news[hashnew][4]}" frameborder="0" allowfullscreen="1" encrypted-media; fullscreen; picture-in-picture"></iframe>
+				</div>
+			</div>
+
+			<!--<div id="vk_post_-211582281_1081"></div>
+			<script type="text/javascript">
+			(function() {
+				VK.Widgets.Post("vk_post_-211582281_1081", -211582281, 1081, 'SnUXfxrPFKlOWs8V184OsFCiEyVU');
+			())}
+			</script>-->
+
+	`
+
+	if(news[hashnew][4]==undefined){
+		document.querySelector('.vidos_bilet').style.display = 'none';
+		document.querySelector('.only_new_disc').style.marginBottom = '2rem';
+	}
+
+	document.querySelector('title').innerText = news[hashnew][2];
+	window.stop();
+
+	}
+
+
+
+
 	let localca = localStorage.getItem('infonew')
 	if(news[localca][0][0]=='i'){
 		slash = '../'}
@@ -945,12 +1007,16 @@ if (document.body.contains(document.getElementsByClassName('the_new_container')[
 
 	`
 
-	document.querySelector('title').innerText = news[localca][2]
+	document.querySelector('title').innerText = news[localca][2];
+
+	
 
 	if(news[localca][4]==undefined){
 		document.querySelector('.vidos_bilet').style.display = 'none';
 		document.querySelector('.only_new_disc').style.marginBottom = '2rem';
 	}
+	
+	window.location.hash = news.length - localca;
 
 
 }
