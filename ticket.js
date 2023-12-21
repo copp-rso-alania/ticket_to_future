@@ -18,6 +18,17 @@
 	
 	let news = [
 
+		[
+			'https://sun9-31.userapi.com/impg/D69veqAQMA-MhBCx96AGVpzFgpgY9mSt2JMD-g/yhfBAqSAm4A.jpg?size=2560x1920&quality=95&sign=af563b5b3af17ad0833dc810a4864abb&type=album',
+			'14 декабря, 2023',
+			'Урок финансовой грамотности в МБОУ МСОШ №2 г.Владикавказ',
+			`
+			В МБОУ МСОШ №2 был проведен урок финансовой грамотности: «Личный бюджет и финансовое планирование».
+			Урок провела Меликян Л.А. - к.э.н., доцент кафедры экономики и экономической безопасности Горского ГАУ.
+			<br><br>
+			<a href="https://s2.amsvlad.ru/">МБОУ СОШ №2, с.Эльхотово</a>`,
+		],
+
 
 		[
 			'https://sun9-55.userapi.com/impg/vt2LrdoPTZitxBDnBBVre6ZHSJ8uvMNv7Iv1rg/T9dQonD5KgU.jpg?size=1620x2160&quality=95&sign=4cd074afbf514ed7d339a95973caf0c9&type=album',
