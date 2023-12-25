@@ -14,6 +14,16 @@
 	
 	let news = [
 
+	[
+		'https://sun9-29.userapi.com/impg/y82DToyY2KeVMDxRn-FwUC41V3NTfsBjvKhPZg/IJW-3i7-7Wo.jpg?size=2560x1181&quality=95&sign=fcd81998bca6ae75dffe8f21c0ba505b&type=album',
+		'24 декабря, 2023',
+		'Занятие «Ремонт тормозной системы» в МБОУ СОШ №7 г.Моздок',
+		`
+		8 класс на СПО в МАПТ. Занятие в рамках проекта "Билет в будущее", тема - "Ремонт тормозной системы". Мальчикам интересно, так как эта информация пригодится им в будущем, ведь они - будущие автоводители!
+		<br><br>
+		<a href="https://7.mozdokschool.ru/">МБОУ СОШ №7 г.Моздок</a>`,
+	],
+
 		[
 			'https://sun138-2.userapi.com/impf/hceuXEWJEV0-L6TY_OOBr-o3FaT7jXR1xGIUmQ/Mbljoupz6d4.jpg?size=1280x960&quality=96&sign=0211b667bea274527bda3dd12f4c65f4&type=album',
 			'21 декабря, 2023',
@@ -1166,7 +1176,9 @@ if (document.body.contains(document.getElementsByClassName('the_new_container')[
 
 		let hashnew = news.length - Number(window.location.hash.substring(1));
 
-		console.log(news[hashnew])
+		// console.log(news[hashnew])
+
+		// alert(news[hashnew])
 
 
 		if(news[hashnew][0][0]=='i'){
