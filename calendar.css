@@ -34,7 +34,8 @@
     border-radius: var(--calendar-border-radius);
     flex-grow: 1;
     /* box-shadow: 0px 0px 60px green; */
-    box-shadow: 0px 0px 50px #1dff9b;
+    /* box-shadow: 0px 0px 40px #1dff9b; */
+    box-shadow: 0px 0px 50px rgb(68,141,85);
 }
 
 .calendar-inner {

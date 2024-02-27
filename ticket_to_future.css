@@ -100,7 +100,14 @@ nav{
 	/*background-color: rgba(0,179,108,.8);*/
 	/* background: linear-gradient(#0f9b91, #00d07c); */
 	background-color: #0f9b91;
-}
+	/* background: 
+	url(images/greengala.jpg);
+	background-position: top center;
+	background-size: 100% auto; */
+	/* background-size: auto auto; */
+	/* background: 
+	url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614773411_135-p-neitralnii-fon-dlya-prezentatsii-138.jpg);*/
+} 
 
 .title_news{
 	text-align: center;
@@ -147,7 +154,8 @@ h2,h3,h4,h5{
 
 .n_block{
 	display: block;
-	background-color: white;
+	/* background-color: white; */
+	background-color: rgb(247,247,247);
 	padding: 10px 10px 15px 10px;
 	border-radius: 10px;
 	cursor: pointer;
