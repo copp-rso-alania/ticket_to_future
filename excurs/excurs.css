@@ -1,0 +1,19 @@
+.nav_unit:first-child{
+	color: unset;
+}
+
+.nav_unit:nth-child(3){
+	color: black;
+}
+
+.nav_unit:first-child:hover{
+	color: #029863;
+}
+
+.nav_unit:nth-child(12){
+	color: #029863;
+}
+
+.n_text{
+	min-height: unset;
+}
