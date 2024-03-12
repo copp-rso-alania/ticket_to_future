@@ -1,3 +1,14 @@
+body{
+	min-width: 635px;
+}
+
+h1{
+	margin-bottom: 1.7rem;
+	text-align: center;
+    color: white;
+    margin-inline: .5rem;
+}
+
 .nav_unit:first-child{
 	color: unset;
 }
@@ -16,4 +27,28 @@
 
 .n_text{
 	min-height: unset;
+}
+
+.docs{
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+
+.doc_unit{
+	margin-inline: 10px;
+}
+
+.docs iframe{
+	height: 2370px;
+	width: 100%;
+	border-radius: 20px;
+}
+
+
+@media(max-width:800px){
+	.doc_unit_cutheight{
+		height: 670px!important;
+	}
+	
 }
