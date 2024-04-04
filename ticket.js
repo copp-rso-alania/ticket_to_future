@@ -13,7 +13,6 @@
 */
 	
 	let news = [
-
 		[
 			'https://i.ibb.co/hKv4f90/Whats-App-Image-2024-04-04-at-2-04-02-PM.jpg',
 			'4 апреля, 2024',
@@ -23,7 +22,7 @@
 			<br><br>
 			<a href="http://alagir3.osedu2.ru/">СП МБОУ СОШ N3 г.Алагира</a>
 			`,
-			'https://rutube.ru/video/b005381554b63a8df1f22e322d94cf13/',
+			'https://www.youtube.com/embed/eCuza7McchM'
 		],
 
 		[
