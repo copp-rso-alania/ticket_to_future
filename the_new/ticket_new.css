@@ -12,8 +12,9 @@
 
 h1{
 	font-family: geosemibold;
-	font-size: 2rem;
-	text-align: center;
+	font-size: 1.6rem;
+	text-align: left;
+	line-height: 1.4;
 }
 
 .the_new_container a{
@@ -24,7 +25,7 @@ h1{
 .the_new_container{
 	margin: 0 auto;
     max-width: 1100px;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2.2rem 1rem 2rem 1rem;
 }
 
 
@@ -40,8 +41,8 @@ h1{
 }
 
 .n_date_2{
-	text-align: center;
-	font-size: 1.5rem;
+	text-align: right;
+	font-size: 1.2rem;
 	font-family: geolight;
 	margin-top: 1rem;
 	color: steelblue;
