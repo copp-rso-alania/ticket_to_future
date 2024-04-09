@@ -23,7 +23,7 @@
 			<br><br>
 			<a href="http://ramonovo.osedu2.ru/">МБОУ ООШ пос. Рамоново</a>
 			`,
-			'https://youtu.be/09zgUTSGJec'
+			'https://www.youtube.com/embed/09zgUTSGJec'
 		],
 
 		[
@@ -35,7 +35,7 @@
 			<br><br>
 			<a href="http://ramonovo.osedu2.ru/">МБОУ ООШ пос. Рамоново</a>
 			`,
-			'https://youtube.com/shorts/-s9WZJ7U5dQ'
+			'https://www.youtube.com/embed/-s9WZJ7U5dQ'
 		],
 
 		[
