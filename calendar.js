@@ -298,8 +298,8 @@ function fordatas(){
     
             news.forEach(element2=>{ 
 
-              console.log(element.innerText +  ' ' + month.toLocaleLowerCase().substring(0,3)+' '+year.innerText);
-                console.log(element2[1].split(" ")[0]+' '+element2[1].split(" ")[1].substring(0,3)+' '+element2[1].slice(-4));
+              // console.log(element.innerText +  ' ' + month.toLocaleLowerCase().substring(0,3)+' '+year.innerText);
+              //   console.log(element2[1].split(" ")[0]+' '+element2[1].split(" ")[1].substring(0,3)+' '+element2[1].slice(-4));
 
               // if(element.innerText +  ' ' + month.toLocaleLowerCase().substring(0,3)+' '+year.innerText == element2[1].split(" ")[0]+' '+element2[1].split(" ")[1].substring(0,3)+' '+element2[1].slice(-4)){
               //   element.style.backgroundColor = 'orange'
