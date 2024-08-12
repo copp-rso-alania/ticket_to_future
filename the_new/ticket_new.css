@@ -38,6 +38,7 @@ h1{
 	max-height: 600px;
 	width: 100%;
 	border-radius: 20px;
+	/* object-fit: contain; */
 }
 
 .n_date_2{
