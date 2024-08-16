@@ -711,19 +711,7 @@
 
 						<div class="t_images_line">
 							<div class="t_images_unit">
-								<img src="images/bilet1.jpeg" alt="">
-							</div>
-							<div class="t_images_unit">
-								<img src="images/bilet2.jpg" alt="">
-							</div>
-							<!-- <div class="t_images_unit">
-								<img src="images/teacher1.webp" alt="">
-							</div> -->
-							<div class="t_images_unit">
 								<img src="images/bilet3.jpg" alt="">
-							</div>
-							<div class="t_images_unit">
-								<img src="images/bilet4.jpg" alt="">
 							</div>
 						</div>
 
@@ -914,6 +902,27 @@ let transcount2 = 0;
 		
 // 	}
 // }, true);
+
+
+let manypics = localStorage.getItem('imagesarray');
+
+manypics = JSON.parse(manypics);
+
+// console.log(imagesLine)
+
+
+for(let i = 0; i<manypics.length; i++){
+	if(manypics[i][0]!= 'h') continue
+	imagesLine[0].innerHTML += `
+		<div class="t_images_unit">
+			<img src="${manypics[i]}" alt="">
+		</div>
+	`
+}
+
+
+
+// imagesLine
 
 </script>
 
