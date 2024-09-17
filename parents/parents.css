@@ -339,11 +339,15 @@ body{
 
 .ca_image{
 	max-height: 450px;
+	border-radius: 50px 0px 0px 50px;
 	/*text-align: center;*/
 	flex-basis: 40%;
+	background-color: #fff;
+
 }
 
 .ca_text{
+	flex-grow: 1;
 	flex-basis: 60%;
 	background-color: white;
 	padding: 1rem;
@@ -413,8 +417,9 @@ body{
 
 .p_author_image img{
 	width: 100px;
+    height: 100px;
 	border-radius: 20px;
-	max-height: 80px;
+	/* max-height: 80px; */
 }
 
 .p_author_disc{

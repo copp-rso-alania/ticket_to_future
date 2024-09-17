@@ -735,17 +735,22 @@
 								<div class="pick_author">
 									<a href="#course_id1">
 									<div class="p_author_image">
-										<img src="images/elena.jpg" alt="">
+										<img src="images/rolan.jpeg" alt="">
 									</div>
 
 									<div class="p_author_disc">
-										Анисимова Елена Станиславовна
+										Суменов Ролан Олегович
+										<!-- Анисимова Елена Станиславовна -->
 									</div>
 
 									<div class="hiddeninfo" style="display: none;">
-										<div>Координатор по внедрению профориентационного минимума. </div>
-										Методист, мастер производственного обучения Центра ОПП РСО-Алания. 
-										Окончила Российский государственный профессионально-педагогический университет, г. Екатеринбург.
+										<div><!-- Координатор по внедрению профориентационного минимума.  -->
+											Преподаватель.
+										</div>
+										Тьютор Центра ОПП РСО-Алания. Программист, разработчик платформы.
+
+										<!-- Методист, мастер производственного обучения Центра ОПП РСО-Алания. 
+										Окончила Российский государственный профессионально-педагогический университет, г. Екатеринбург. -->
 										
 									</div>
 									</a>
@@ -1202,6 +1207,15 @@ for(let i = 0; i<theauthor.length; i++){
 		autinfo[0].innerHTML = document.getElementsByClassName('p_author_disc ')[i].innerHTML
 		autinfo[1].innerHTML = document.getElementsByClassName('hiddeninfo')[i].innerHTML
 		document.getElementsByClassName('ca_image')[0].getElementsByTagName('img')[0].src = document.getElementsByClassName('p_author_image')[i].getElementsByTagName('img')[0].src;
+
+		if(document.getElementsByClassName('p_author_image')[i].getElementsByTagName('img')[0].src.slice(-4) == 'jpeg'){
+			document.getElementsByClassName('ca_image')[0].style.flexBasis = '30%'
+		}
+		else{
+			document.getElementsByClassName('ca_image')[0].style.flexBasis = '40%'
+		}
+
+		// if(document.getElementsByClassName('p_author_image')[i].getElementsByTagName('img')[0].src)
 	}
 }
 
