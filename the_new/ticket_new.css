@@ -32,6 +32,8 @@ h1{
 .n_main_image{
 	margin-top: 1.5rem;
 	margin-inline: auto;
+	font-size: 0;
+	border-radius: 20px;
 }
 
 .n_main_image img{
