@@ -261,10 +261,12 @@ footer{
 
 .christ_tree{
 	text-align: center;
+	/* object-fit: contain; */
 }
 
 .christ_tree img{
-	max-width: 340px;
+	/* max-width: 340px; */
+	max-width: 399px;
 	transform: translateY(90px);
 }
 
