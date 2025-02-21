@@ -3597,10 +3597,15 @@ if (document.body.contains(document.getElementsByClassName('the_new_container')[
 	if(window.location.hash){	
 
 		let hashnew = news.length - Number(window.location.hash.substring(1));
+		// console.log(news.length)
+		// console.log(Number(window.location.hash.substring(1)))
 
 		// console.log(news[hashnew])
 
 		// alert(news[hashnew])
+
+		console.log(hashnew)
+		console.log(news)
 
 
 		if(news[hashnew][0][0]=='i'){
@@ -3608,7 +3613,7 @@ if (document.body.contains(document.getElementsByClassName('the_new_container')[
 		else{slash = ''}
 
 		document.getElementsByClassName('the_new_container')[0].innerHTML = `
-			<h1>
+			<h1 id="fromHashNew">
 				${news[hashnew][2]}
 			</h1>
 
@@ -3642,7 +3647,7 @@ if (document.body.contains(document.getElementsByClassName('the_new_container')[
 
 	`
 
-
+	// console.log(news[hashnew])
 	if(news[hashnew][4]==undefined){
 		document.querySelector('.vidos_bilet').style.display = 'none';
 		document.querySelector('.only_new_disc').style.marginBottom = '2rem';
@@ -3650,17 +3655,15 @@ if (document.body.contains(document.getElementsByClassName('the_new_container')[
 
 	document.querySelector('title').innerText = news[hashnew][2];
 	window.stop();
-
 	}
 
 
-
+	if(document.getElementById('fromHashNew') == undefined){
 
 	let localca = localStorage.getItem('infonew')
 	if(news[localca][0][0]=='i'){
 		slash = '../'}
 	else{slash = ''}
-
 
 	document.getElementsByClassName('the_new_container')[0].innerHTML = `
 			<h1>
@@ -3718,7 +3721,7 @@ if (document.body.contains(document.getElementsByClassName('the_new_container')[
 
 		let arrayimgs = news[localca][0].split(',');
 
-		console.log(arrayimgs)
+		// console.log(arrayimgs)
 
 
 		for(let i = 1; i<arrayimgs.length;i++){
@@ -3769,6 +3772,7 @@ imgset = Array.from(imgset)
 
 localStorage.setItem('imagesarray', JSON.stringify(imgset))
 
+}
 
 //4
 // console.log(localStorage.getItem('infonew'))
