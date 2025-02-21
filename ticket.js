@@ -14,7 +14,24 @@
 	
 	let news = [
 
-
+		[
+			'https://sun9-72.userapi.com/impg/XNHbqI0pa7u_MnPdLDG1LjKV-cYPVEsFMGVn4Q/xfcH1OFw9FQ.jpg?size=1156x867&quality=96&sign=12183eca871d4431a9f1eeb6ec39aebe&type=album,https://sun9-44.userapi.com/impg/c-BJFAkzyVUftkw8dOh3kVx4uxiTuq9XrC-_vQ/GHf9m8Dd8Vc.jpg?size=960x1280&quality=96&sign=83ccd25f17fe610f08b6dbfbf200e9d0&type=album,https://sun9-24.userapi.com/impg/-Jn5_x7NeuV1_YL5h-jUVStJJbQj1yr1qCnycg/R14MgWTd0JE.jpg?size=960x1280&quality=96&sign=c67edd3e2f6856b8578a802e67e06bc6&type=album,https://sun9-15.userapi.com/impg/pO27_4BlNYJS1hX86Qhvs3pnAth0gxJInu7pfQ/qNoI7t8J0IE.jpg?size=867x1156&quality=96&sign=251a949e3db67a5313079b53e6219691&type=album,https://sun9-49.userapi.com/impg/uebxMxRGL8WoFpcIh67U3R7QswUV1o0AFCBp4w/DKd5P62KH2M.jpg?size=867x1156&quality=96&sign=a451cd031f17111c0cf2f45b8389b052&type=album',
+			'20 февраля, 2025',
+			'«Россия индустриальная: тяжёлая промышленность, машиностроение» в МБОУ ООШ станицы Черноярской',
+			`
+			Сегодня на занятии «Россия — мои горизонты» мы погрузились в тему «Россия индустриальная: тяжёлая промышленность, машиностроение». За короткое время мы открыли для себя удивительный мир, где труд человека уже не является единственной движущей силой, но человек остаётся главным умом, который управляет всем происходящим.
+			<br><br>
+			Представьте себе: вы держите пульт управления, а перед вами — огромный завод. Машины выполняют сложнейшие задачи, подобно сценам из компьютерной игры. Но это не фантазия, а реальность! Благодаря автоматизации и цифровому управлению мы находимся на передовой современных технологий, делая работу не только более точной, но и безопасной.
+			<br><br>
+			Посмотрев видеоролик о среде, мы узнали, что тяжёлая промышленность и машиностроение — это не только производство металлов и машин, но и огромный мир инноваций, постоянно меняющий нашу жизнь. В ходе занятия мы также выполнили интерактивные задания, которые помогли нам лучше понимать современные профессии.
+			<br><br>
+			Особенным моментом стало знакомство с одной из ведущих компаний России — АО «ОДК-Пермские моторы». Мы увидели, как создаются авиационные двигатели и как работают специалисты этой уникальной отрасли. Эти профессионалы, как никто другой, знают, как важны внимание, любознательность и работа в команде.
+			<br><br>
+			Мы уверены, что полученные сегодня знания помогут вам лучше понять мир профессий и, возможно, сделать шаг к выбору своей будущей карьеры. Пусть этот опыт станет началом вашего большого пути к успеху!
+			<br><br>
+			<a href="https://vk.com/club213149532">МБОУ ООШ станицы Черноярской</a>
+			`
+		],
 
 		[
 			'https://sun9-2.userapi.com/impg/4TUcdie4kvHpIlc9n-xDeiVRDF1SSFre1g2zrg/FEqT_gbtdO0.jpg?size=1280x960&quality=95&sign=5d57057eacc54850c93ccbec0ca9aefc&type=album,https://sun9-47.userapi.com/impg/8Wf9Cnv0SCzJdgAY0Pw0zVECtJWaulIpd8ILFg/lfZd21wDeI4.jpg?size=1599x899&quality=95&sign=c28c5a266cc7d00a11c3d62ac98e15c0&type=album,https://sun9-1.userapi.com/impg/coQkwSCDyygM31D-dZlUp3xCqr3xGWgtjlbzig/4-f3MEzdMww.jpg?size=1280x720&quality=95&sign=7012f23a3f3e4a6c8a145da6ebae1971&type=album,https://sun9-13.userapi.com/impg/LdsCNQqYZj9NGqutJcL3zmbrQmM8y-Ny4qe05g/UveSW46GOLQ.jpg?size=2560x1916&quality=95&sign=360a9c5c253b1b0a4d8fe13e40bdbff0&type=album',
