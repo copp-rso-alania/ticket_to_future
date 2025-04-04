@@ -11,11 +11,15 @@
 		],
 	
 */
-	
-	let news = [
 
+	// import vkfrom from 'vknews.js';
+
+	
+	// 'https://sun9-72.userapi.com/impg/XNHbqI0pa7u_MnPdLDG1LjKV-cYPVEsFMGVn4Q/xfcH1OFw9FQ.jpg?size=1156x867&quality=96&sign=12183eca871d4431a9f1eeb6ec39aebe&type=album~https://sun9-44.userapi.com/impg/c-BJFAkzyVUftkw8dOh3kVx4uxiTuq9XrC-_vQ/GHf9m8Dd8Vc.jpg?size=960x1280&quality=96&sign=83ccd25f17fe610f08b6dbfbf200e9d0&type=album~https://sun9-24.userapi.com/impg/-Jn5_x7NeuV1_YL5h-jUVStJJbQj1yr1qCnycg/R14MgWTd0JE.jpg?size=960x1280&quality=96&sign=c67edd3e2f6856b8578a802e67e06bc6&type=album~https://sun9-15.userapi.com/impg/pO27_4BlNYJS1hX86Qhvs3pnAth0gxJInu7pfQ/qNoI7t8J0IE.jpg?size=867x1156&quality=96&sign=251a949e3db67a5313079b53e6219691&type=album~https://sun9-49.userapi.com/impg/uebxMxRGL8WoFpcIh67U3R7QswUV1o0AFCBp4w/DKd5P62KH2M.jpg?size=867x1156&quality=96&sign=a451cd031f17111c0cf2f45b8389b052&type=album'
+
+	let news = [
 		[
-			'https://sun9-72.userapi.com/impg/XNHbqI0pa7u_MnPdLDG1LjKV-cYPVEsFMGVn4Q/xfcH1OFw9FQ.jpg?size=1156x867&quality=96&sign=12183eca871d4431a9f1eeb6ec39aebe&type=album,https://sun9-44.userapi.com/impg/c-BJFAkzyVUftkw8dOh3kVx4uxiTuq9XrC-_vQ/GHf9m8Dd8Vc.jpg?size=960x1280&quality=96&sign=83ccd25f17fe610f08b6dbfbf200e9d0&type=album,https://sun9-24.userapi.com/impg/-Jn5_x7NeuV1_YL5h-jUVStJJbQj1yr1qCnycg/R14MgWTd0JE.jpg?size=960x1280&quality=96&sign=c67edd3e2f6856b8578a802e67e06bc6&type=album,https://sun9-15.userapi.com/impg/pO27_4BlNYJS1hX86Qhvs3pnAth0gxJInu7pfQ/qNoI7t8J0IE.jpg?size=867x1156&quality=96&sign=251a949e3db67a5313079b53e6219691&type=album,https://sun9-49.userapi.com/impg/uebxMxRGL8WoFpcIh67U3R7QswUV1o0AFCBp4w/DKd5P62KH2M.jpg?size=867x1156&quality=96&sign=a451cd031f17111c0cf2f45b8389b052&type=album',
+			'https://sun9-72.userapi.com/impg/XNHbqI0pa7u_MnPdLDG1LjKV-cYPVEsFMGVn4Q/xfcH1OFw9FQ.jpg?size=1156x867&quality=96&sign=12183eca871d4431a9f1eeb6ec39aebe&type=album~https://sun9-44.userapi.com/impg/c-BJFAkzyVUftkw8dOh3kVx4uxiTuq9XrC-_vQ/GHf9m8Dd8Vc.jpg?size=960x1280&quality=96&sign=83ccd25f17fe610f08b6dbfbf200e9d0&type=album~https://sun9-24.userapi.com/impg/-Jn5_x7NeuV1_YL5h-jUVStJJbQj1yr1qCnycg/R14MgWTd0JE.jpg?size=960x1280&quality=96&sign=c67edd3e2f6856b8578a802e67e06bc6&type=album~https://sun9-15.userapi.com/impg/pO27_4BlNYJS1hX86Qhvs3pnAth0gxJInu7pfQ/qNoI7t8J0IE.jpg?size=867x1156&quality=96&sign=251a949e3db67a5313079b53e6219691&type=album~https://sun9-49.userapi.com/impg/uebxMxRGL8WoFpcIh67U3R7QswUV1o0AFCBp4w/DKd5P62KH2M.jpg?size=867x1156&quality=96&sign=a451cd031f17111c0cf2f45b8389b052&type=album',
 			'20 февраля, 2025',
 			'«Россия индустриальная: тяжёлая промышленность, машиностроение» в МБОУ ООШ станицы Черноярской',
 			`
@@ -34,7 +38,7 @@
 		],
 
 		[
-			'https://sun9-2.userapi.com/impg/4TUcdie4kvHpIlc9n-xDeiVRDF1SSFre1g2zrg/FEqT_gbtdO0.jpg?size=1280x960&quality=95&sign=5d57057eacc54850c93ccbec0ca9aefc&type=album,https://sun9-47.userapi.com/impg/8Wf9Cnv0SCzJdgAY0Pw0zVECtJWaulIpd8ILFg/lfZd21wDeI4.jpg?size=1599x899&quality=95&sign=c28c5a266cc7d00a11c3d62ac98e15c0&type=album,https://sun9-1.userapi.com/impg/coQkwSCDyygM31D-dZlUp3xCqr3xGWgtjlbzig/4-f3MEzdMww.jpg?size=1280x720&quality=95&sign=7012f23a3f3e4a6c8a145da6ebae1971&type=album,https://sun9-13.userapi.com/impg/LdsCNQqYZj9NGqutJcL3zmbrQmM8y-Ny4qe05g/UveSW46GOLQ.jpg?size=2560x1916&quality=95&sign=360a9c5c253b1b0a4d8fe13e40bdbff0&type=album',
+			'https://sun9-2.userapi.com/impg/4TUcdie4kvHpIlc9n-xDeiVRDF1SSFre1g2zrg/FEqT_gbtdO0.jpg?size=1280x960&quality=95&sign=5d57057eacc54850c93ccbec0ca9aefc&type=album~https://sun9-47.userapi.com/impg/8Wf9Cnv0SCzJdgAY0Pw0zVECtJWaulIpd8ILFg/lfZd21wDeI4.jpg?size=1599x899&quality=95&sign=c28c5a266cc7d00a11c3d62ac98e15c0&type=album~https://sun9-1.userapi.com/impg/coQkwSCDyygM31D-dZlUp3xCqr3xGWgtjlbzig/4-f3MEzdMww.jpg?size=1280x720&quality=95&sign=7012f23a3f3e4a6c8a145da6ebae1971&type=album~https://sun9-13.userapi.com/impg/LdsCNQqYZj9NGqutJcL3zmbrQmM8y-Ny4qe05g/UveSW46GOLQ.jpg?size=2560x1916&quality=95&sign=360a9c5c253b1b0a4d8fe13e40bdbff0&type=album',
 			'8 февраля, 2025',
 			'И вновь профориентация.',
 			`
@@ -47,7 +51,7 @@
 		],
 
 		[
-			'https://sun9-69.userapi.com/impg/IG8Rh-4yoT-QbLqdEJqoEmCeTy42mQW4u2jwEg/ADHb4LSoYMo.jpg?size=1600x900&quality=95&sign=cf4e15486e8e137eed3c9ab073ec4f1f&type=album,https://sun9-70.userapi.com/impg/oPFHkqsZQZI8RCOXF-petheY9HWTYjo1a94CBQ/UFubzK_jGBo.jpg?size=1600x900&quality=95&sign=b7f2f79c455528c1d10ff3255a02d471&type=album,https://sun9-72.userapi.com/impg/KAXC0m5o6c-waFlyMGAbzXxU_79yM9eKFaPTpA/QekbxzJXfuY.jpg?size=1600x900&quality=95&sign=0b1d525f24052786b1be942008a14799&type=album',
+			'https://sun9-69.userapi.com/impg/IG8Rh-4yoT-QbLqdEJqoEmCeTy42mQW4u2jwEg/ADHb4LSoYMo.jpg?size=1600x900&quality=95&sign=cf4e15486e8e137eed3c9ab073ec4f1f&type=album~https://sun9-70.userapi.com/impg/oPFHkqsZQZI8RCOXF-petheY9HWTYjo1a94CBQ/UFubzK_jGBo.jpg?size=1600x900&quality=95&sign=b7f2f79c455528c1d10ff3255a02d471&type=album~https://sun9-72.userapi.com/impg/KAXC0m5o6c-waFlyMGAbzXxU_79yM9eKFaPTpA/QekbxzJXfuY.jpg?size=1600x900&quality=95&sign=0b1d525f24052786b1be942008a14799&type=album',
 			'6 февраля, 2025',
 			'«Россия – мои горизонты» в МБОУ СОШ с.Предгорное.',
 			`
@@ -60,7 +64,7 @@
 		],
 
 		[
-			'https://sun9-28.userapi.com/impg/jBlTZ-yzO1DeSSGVmhwG16QRtFRm2gNg7OvhGg/kmMJ477_FNY.jpg?size=2560x1155&quality=96&sign=f687ee37013e0dec3c85651f96da8444&type=album,https://sun9-66.userapi.com/impg/V1_HlEMBwHD4zF7LXC3bRh5jNsm5YfzVqo-OuA/G8HlCBLEcTQ.jpg?size=2560x1155&quality=96&sign=b1a1770d26cd71a9dcc707b25214f0ac&type=album,https://sun9-48.userapi.com/impg/6XUt9c_trY45hLxPT9I9fspNgYLkjL2OjpXQKw/_kPLa2v7yAA.jpg?size=2560x1155&quality=96&sign=cc5fdb123cc9a8dd75c051c479654499&type=album,https://sun9-9.userapi.com/impg/w3dSx0aKBOaika1ei5SniFD4fyo27bYoLqEaiw/-rSdL1TiO_4.jpg?size=1600x721&quality=96&sign=ed39155101e5617eccde41aa535137c8&type=album,https://sun9-48.userapi.com/impg/8a2K_SqGAAgokEJMWXqxXMF2_YVPZ8blDfcFPQ/gILMc2gjLxM.jpg?size=1600x900&quality=96&sign=8da97369d61d5490da1102f338424896&type=album',
+			'https://sun9-28.userapi.com/impg/jBlTZ-yzO1DeSSGVmhwG16QRtFRm2gNg7OvhGg/kmMJ477_FNY.jpg?size=2560x1155&quality=96&sign=f687ee37013e0dec3c85651f96da8444&type=album~https://sun9-66.userapi.com/impg/V1_HlEMBwHD4zF7LXC3bRh5jNsm5YfzVqo-OuA/G8HlCBLEcTQ.jpg?size=2560x1155&quality=96&sign=b1a1770d26cd71a9dcc707b25214f0ac&type=album~https://sun9-48.userapi.com/impg/6XUt9c_trY45hLxPT9I9fspNgYLkjL2OjpXQKw/_kPLa2v7yAA.jpg?size=2560x1155&quality=96&sign=cc5fdb123cc9a8dd75c051c479654499&type=album~https://sun9-9.userapi.com/impg/w3dSx0aKBOaika1ei5SniFD4fyo27bYoLqEaiw/-rSdL1TiO_4.jpg?size=1600x721&quality=96&sign=ed39155101e5617eccde41aa535137c8&type=album~https://sun9-48.userapi.com/impg/8a2K_SqGAAgokEJMWXqxXMF2_YVPZ8blDfcFPQ/gILMc2gjLxM.jpg?size=1600x900&quality=96&sign=8da97369d61d5490da1102f338424896&type=album',
 			'6 февраля, 2025',
 			'«Россия умная: наука и образование» - эта тема стала предметом беседы на классном часе «Россия - мои горизонты» 6 февраля. ',
 			`
@@ -3542,6 +3546,25 @@
 
 	]
 
+	vkfrom = localStorage.getItem('fromvk')
+
+	vkfrom = JSON.parse(vkfrom)
+
+	vkfrom = vkfrom.reverse()
+
+	console.log(vkfrom)
+
+	for(let i =0; i<vkfrom.length;i++){
+		news.unshift(vkfrom[i]);
+}
+
+console.log(news)
+	
+
+// console.log(vkfrom)
+
+
+
 if (document.getElementById('hidtag')) {
 	// for(let i= news.length-1; i>=0;i--){
 	for(let i= 0; i<=news.length-1;i++){
@@ -3579,6 +3602,9 @@ if (document.body.contains(document.getElementsByClassName('n_block')[0])) {
 let newinfo = document.getElementsByClassName('n_block')
 
 // for(let i= news.length-1; i>=0;i--){
+
+// console.log(news.length);
+
 for(let i= 0; i<=news.length-1;i++){
 	newinfo[i].onclick = function() {
 		// localStorage.setItem('infonew',`${news.length-i-1}`)
@@ -3606,6 +3632,7 @@ if (document.body.contains(document.getElementsByClassName('the_new_container')[
 
 		console.log(hashnew)
 		console.log(news)
+
 
 
 		if(news[hashnew][0][0]=='i'){
@@ -3665,6 +3692,8 @@ if (document.body.contains(document.getElementsByClassName('the_new_container')[
 		slash = '../'}
 	else{slash = ''}
 
+	console.log(news[localca])
+
 	document.getElementsByClassName('the_new_container')[0].innerHTML = `
 			<h1>
 				${news[localca][2]}
@@ -3712,14 +3741,18 @@ if (document.body.contains(document.getElementsByClassName('the_new_container')[
 		document.querySelector('.only_new_disc').style.marginBottom = '2rem';
 	}
 
-	if(news[localca][0].split(',').length>1){
+	if(news[localca][0].split('~').length>1){
 		// alert(news[localca][0])
 
 		document.querySelector('.vidos_bilet').style.display = 'none';
 		document.querySelector('.only_new_disc').style.marginBottom = '2rem';
 
 
-		let arrayimgs = news[localca][0].split(',');
+		// let arrayimgs = news[localca][0].split(',');
+
+		console.log(news[localca][0])
+
+		let arrayimgs = news[localca][0].split('~');
 
 		// console.log(arrayimgs)
 
@@ -3774,6 +3807,6 @@ localStorage.setItem('imagesarray', JSON.stringify(imgset))
 
 }
 
-//4
-// console.log(localStorage.getItem('infonew'))
-//news
+
+
+
