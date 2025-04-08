@@ -191,4 +191,66 @@
 	// let a = JSON.parse(maininfo);
 	// console.log(a)
 </script>
+
+<script>
+	let tvltoggle = [document.getElementsByClassName('tvl_toggle_unit')[0],document.getElementsByClassName('tvl_toggle_unit')[1]]
+let imagesLine = document.getElementsByClassName('n_main_image')[0];
+// console.log(imagesLine.children.length)	
+let transcount = 0;
+
+
+	tvltoggle[1].onclick = function() {
+		transcount += 100;
+
+		imagesLine.style.transform = `translateX(-${transcount}%)`;
+console.log(transcount + 100)
+	console.log(imagesLine.children.length * 100)
+
+	if(window.screen.width > 800){
+		if(((imagesLine.children.length * 50) <= (transcount + 50) )||((transcount+100) == (imagesLine.children.length * 50)) ){
+			tvltoggle[1].style.display = 'none';
+		}
+	}
+
+	else if(window.screen.width <= 800){
+		if(transcount+100 >= imagesLine.children.length * 100){
+			tvltoggle[1].style.display = 'none';
+		}
+	}
+
+	}
+
+	tvltoggle[0].onclick = function() {
+		if (transcount == 0) {
+			return false
+		}
+
+		if(tvltoggle[1].style.display == 'none'){
+			tvltoggle[1].style.display = 'block';
+		}
+
+			transcount -= 100;
+			imagesLine.style.transform = `translateX(-${transcount}%)`;
+
+	}
+
+		if((window.screen.width > 800) && (imagesLine.children.length <= 2)){
+					document.getElementsByClassName('tv_line_toggle')[0].style.display = 'none';
+					imagesLine.style.marginBottom = '1.5rem';
+
+		}
+
+
+		if((window.screen.width <= 800) && (imagesLine.children.length <= 1)){
+					document.getElementsByClassName('tv_line_toggle')[0].style.display = 'none';
+					imagesLine.style.marginBottom = '1.5rem'
+		}
+
+		if(window.screen.width <= 800){
+			for(let i =0; i<imagesLine.children.length; i++){
+				imagesLine.children[i].style.minWidth = '100%'
+			}
+			imagesLine.style.columnGap = '0'
+		}
+</script>
 </html>		

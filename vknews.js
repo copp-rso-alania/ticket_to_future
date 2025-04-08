@@ -47,6 +47,8 @@ function callbackFunc (result) {
                 }
                 imagesrow = imagesrow.substring(0,imagesrow.length-1)
                 // console.log(imagesrow)
+
+                
             }
 
             else{
@@ -62,13 +64,21 @@ function callbackFunc (result) {
 
                 // dateAndTitle[2] = "<br><br> " + dateAndTitle[2]
 
-                console.log(dateAndTitle)
+
+                posts[i].copy_history[0].from_id = String(posts[i].copy_history[0].from_id)
+
+                
+
+                let linktosourse = `<a href="https://vk.com/public${posts[i].copy_history[0].from_id.slice(1)}" target="blank"> ${dateAndTitle[2]} </a>`
+
+                console.log(linktosourse)
+                
             // }
             // else{
             //     dateAndTitle[2] = ' '
             // }
 
-            newarr = [imagesrow, dateAndTitle[0],dateAndTitle[1],posts[i].copy_history[0].text.split('\n').join(' <br> ') + "<br><br>" + dateAndTitle[2]]
+            newarr = [imagesrow, dateAndTitle[0],dateAndTitle[1],posts[i].copy_history[0].text.split('\n').join(' <br> ') + "<br><br>" + linktosourse]
 			vkfrom.push(newarr)
 
             imagesrow = '';

@@ -74,9 +74,9 @@ h1{
 	/* flex-grow: 1; */
 }
 
-.n_main_image > div:first-child{
+/* .n_main_image > div:first-child{ */
 	/* flex: 100%; */
-}
+/* } */
 
 .n_main_image img{
 	max-height: 600px;
