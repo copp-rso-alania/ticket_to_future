@@ -5,13 +5,15 @@ let newarr = []
 
 function callbackFunc (result) {
 
+
+    console.log(result)
+
     let dateAndTitle;
 
 	let posts = result.response.items;
+    
 
     let imagesrow = '';
-
-    console.log(posts)
 
 	for(let i = 0; i<posts.length;i++){
 		

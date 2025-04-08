@@ -25,7 +25,7 @@ h1{
 .the_new_container{
 	margin: 0 auto;
     /* max-width: 1100px; */
-	max-width: 1200px;
+	max-width: 1300px;
     padding: 2.2rem 1rem 2rem 1rem;
 }
 
@@ -36,25 +36,51 @@ h1{
 	font-size: 0;
 	border-radius: 20px;
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	column-gap: 1rem;
 	row-gap: 1rem;
-	flex-wrap: wrap;
+	transition: .8s;
+	/* flex-wrap: wrap; */
 }
 /* flex: 100%; */
 
+
+.overflow{
+	overflow: hidden; 
+}
+
+.tv_line_toggle {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.tvl_toggle_unit {
+    background-color: #569aff;
+    border-radius: 50%;
+    padding: .7rem .9rem .5rem .9rem;
+    cursor: pointer;
+}
+
+.tvl_toggle_unit:first-child svg {
+    transform: scale(-1);
+}
+
 .n_main_image > div{
-	flex-basis: 540px;
-	flex-grow: 1;
+	/* flex-basis: 540px; */
+	min-width: calc(50% - 1rem);
+	/* flex-grow: 1; */
 }
 
 .n_main_image > div:first-child{
-	flex: 100%;
+	/* flex: 100%; */
 }
 
 .n_main_image img{
 	max-height: 600px;
-	width: 100%;
+	width: 100%; 
 	height: 100%;
 	border-radius: 20px;
 	/* object-fit: contain; */
@@ -69,7 +95,7 @@ h1{
 }
 
 .n_main_text{
-	margin-top: 1.5rem;
+	/* margin-top: .5rem; */
 	margin-bottom: 5rem;
 	border-bottom: 2px solid;
 }
@@ -78,7 +104,7 @@ h1{
 	font-family: geolight;
 	line-height: 1.5;
 	font-size: 1rem;
-	margin-top: 10px;
+	margin-top: 0px;
 }
 
 .n_main_text h4{

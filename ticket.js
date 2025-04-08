@@ -3648,8 +3648,24 @@ if (document.body.contains(document.getElementsByClassName('the_new_container')[
 				${news[hashnew][1]}
 			</div>
 
+
+			<div class="overflow">
 			<div class="n_main_image" name="changedata">
 				<img src="${slash}${news[hashnew][0]}">
+			</div>
+			</div>
+
+			<div class="tv_line_toggle">
+						<div class="tvl_toggle_unit">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13 5L20 12M20 12L13 19M20 12H3.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</div>
+						<div class="tvl_toggle_unit">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13 5L20 12M20 12L13 19M20 12H3.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</div>
 			</div>
 			
 			
@@ -3703,10 +3719,28 @@ if (document.body.contains(document.getElementsByClassName('the_new_container')[
 				${news[localca][1]}
 			</div>
 
+
+			<div class="overflow">
+
 			<div class="n_main_image" name="changedata">
 				<div style="backdrop-filter:blur(15px); width:100%; border-radius: 20px">
 					<img src="${slash}${news[localca][0]}">
 				</div>
+			</div>
+
+			</div>
+
+			<div class="tv_line_toggle">
+						<div class="tvl_toggle_unit">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13 5L20 12M20 12L13 19M20 12H3.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</div>
+						<div class="tvl_toggle_unit">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13 5L20 12M20 12L13 19M20 12H3.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</div>
 			</div>
 			
 			
@@ -3810,3 +3844,95 @@ localStorage.setItem('imagesarray', JSON.stringify(imgset))
 
 
 
+let tvltoggle = [document.getElementsByClassName('tvl_toggle_unit')[0],document.getElementsByClassName('tvl_toggle_unit')[1]]
+let imagesLine = document.getElementsByClassName('n_main_image')[0];
+// console.log(imagesLine.children.length)	
+let transcount = 0;
+
+
+	tvltoggle[1].onclick = function() {
+
+		// if(window.screen.width < 800){
+		// 	transcount2 += 100;
+		// 	imagesLine[0].style.transform = `translateX(calc(-${transcount2}% + -1rem))`;
+		// 	return true
+		// }
+
+
+
+
+		transcount += 100;
+
+
+
+
+		imagesLine.style.transform = `translateX(-${transcount}%)`;
+
+
+		// if((window.screen.width > 800) && (imagesLine.children.length <= 2)){
+		// 	document.getElementsByClassName('tv_line_toggle')[0].style.display = 'none';
+		// 	imagesLine.style.marginBottom = '1.5rem';
+		// }
+console.log(transcount + 100)
+	console.log(imagesLine.children.length * 100)
+
+	if(window.screen.width > 800){
+		if(((imagesLine.children.length * 50) <= (transcount + 50) )||((transcount+100) == (imagesLine.children.length * 50)) ){
+			tvltoggle[1].style.display = 'none';
+		}
+	}
+	
+	
+
+	else if(window.screen.width <= 800){
+		if(transcount+100 >= imagesLine.children.length * 100){
+			tvltoggle[1].style.display = 'none';
+		}
+	}
+		
+
+
+
+	}
+
+	tvltoggle[0].onclick = function() {
+		if (transcount == 0) {
+			return false
+		}
+
+		if(tvltoggle[1].style.display == 'none'){
+			tvltoggle[1].style.display = 'block';
+		}
+
+		// 	if(window.screen.width < 800){
+		// 	transcount2 -= 100;
+		// 	imagesLine[0].style.transform = `translateX(calc(-${transcount2}% + -1rem))`;
+		// 	return true
+		// }
+
+			transcount -= 100;
+			imagesLine.style.transform = `translateX(-${transcount}%)`;
+
+	}
+
+	
+
+
+		if((window.screen.width > 800) && (imagesLine.children.length <= 2)){
+					document.getElementsByClassName('tv_line_toggle')[0].style.display = 'none';
+					imagesLine.style.marginBottom = '1.5rem';
+
+		}
+
+
+		if((window.screen.width <= 800) && (imagesLine.children.length <= 1)){
+					document.getElementsByClassName('tv_line_toggle')[0].style.display = 'none';
+					imagesLine.style.marginBottom = '1.5rem'
+		}
+
+		if(window.screen.width <= 800){
+			for(let i =0; i<imagesLine.children.length; i++){
+				imagesLine.children[i].style.minWidth = '100%'
+			}
+			imagesLine.style.columnGap = '0'
+		}
