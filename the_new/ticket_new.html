@@ -84,6 +84,12 @@
 				</nav>		
 		</header>
 
+		<div class="blackblur">
+			<div class="fullimage">
+					<img src="" alt="" id="showimage">
+			</div>
+		</div>
+		
 
 		<div class="the_new_container">
 			<h1>
@@ -108,39 +114,9 @@
 			</div>
 
 			
-
-
 			<div class="n_main_text">
-				<div>
-					<p>
-					
-				</p>
-				</div>
-				
-				<div >
-					<h4></h4>
-						<p>
-
-							</p>
-				</div>
-
-				<div>
-					<h4></h4>
-						<p>
-							
-						</p>
-				</div>
-
-				<div>
-					<h4></h4>
-						<p>
-							
-						</p>
-				</div>
 				
 			</div>
-			
-
 		</div>
 
 
@@ -193,7 +169,8 @@
 </script>
 
 <script>
-	let tvltoggle = [document.getElementsByClassName('tvl_toggle_unit')[0],document.getElementsByClassName('tvl_toggle_unit')[1]]
+
+let tvltoggle = [document.getElementsByClassName('tvl_toggle_unit')[0],document.getElementsByClassName('tvl_toggle_unit')[1]]
 let imagesLine = document.getElementsByClassName('n_main_image')[0];
 // console.log(imagesLine.children.length)	
 let transcount = 0;
@@ -252,5 +229,24 @@ console.log(transcount + 100)
 			}
 			imagesLine.style.columnGap = '0'
 		}
+
+
+let images = document.querySelectorAll('img');
+
+let blackblur = document.querySelector('.blackblur');
+
+images.forEach((img)=>{
+	img.onclick = (event)=>{
+		blackblur.style.display = 'block';
+		document.querySelector('#showimage').src = event.target.src;
+		console.log(event.target)
+	}
+})
+
+blackblur.onclick = function(){
+	blackblur.style.display = 'none';
+}
+
+
 </script>
 </html>		

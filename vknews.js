@@ -69,7 +69,7 @@ function callbackFunc (result) {
 
                 
 
-                let linktosourse = `<a href="https://vk.com/public${posts[i].copy_history[0].from_id.slice(1)}" target="blank"> ${dateAndTitle[2]} </a>`
+                let linktosourse = `Источник: <a href="https://vk.com/public${posts[i].copy_history[0].from_id.slice(1)}" target="blank"> ${dateAndTitle[2]} </a>`
 
                 console.log(linktosourse)
                 
