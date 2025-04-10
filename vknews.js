@@ -21,8 +21,6 @@ function callbackFunc (result) {
 
         // posts[i].text
 
-        dateAndTitle = posts[i].text.split('\n');
-
         // console.log(dateAndTitle)
 
 		if(posts[i].attachments != ''){
@@ -68,15 +66,59 @@ function callbackFunc (result) {
                 posts[i].copy_history[0].from_id = String(posts[i].copy_history[0].from_id)
 
                 
-
-                let linktosourse = `Источник: <a href="https://vk.com/public${posts[i].copy_history[0].from_id.slice(1)}" target="blank"> ${dateAndTitle[2]} </a>`
-
-                console.log(linktosourse)
-                
             // }
             // else{
             //     dateAndTitle[2] = ' '
             // }
+            
+            // Date(1741271457)
+
+            let data = new Date(posts[i].copy_history[0].date * 1000)
+
+            data = data.toLocaleDateString('ru-RU',{
+                weekday: "long",
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })
+             
+            data = data.replace(',', "").split(' '); data.shift(); data.pop()
+            if (data[1] == 'мая'){data[1] = 'май'}
+            data[1] = data[1]+',';
+            data = data.join(' ');
+
+            console.log(data);
+
+
+            let linktosourse = `Источник: <a href="https://vk.com/public${posts[i].copy_history[0].from_id.slice(1)}" target="blank">https://vk.com/public${posts[i].copy_history[0].from_id.slice(1)}</a>`
+            
+            if(posts[i].text != ''){
+
+                dateAndTitle = posts[i].text.split('\n');
+
+                if(dateAndTitle.length == 1){
+                    dateAndTitle = [data, dateAndTitle[0]]
+                }
+
+                else if (dateAndTitle.length > 1){
+                    dateAndTitle = [dateAndTitle[0], dateAndTitle[1] ]
+                }
+            }
+
+            else{
+                dateAndTitle = [data,'']
+            }
+
+
+
+
+            // data = data.join('').trim()
+
+
+            // console.log(data.toDateString(posts[i].copy_history[0].date))
+            // console.log(data.toDateString(1744179024))
+            // console.log(data.toDateString(1741869987))
+            // console.log(Date(posts[i].copy_history[0].date))
 
             newarr = [imagesrow, dateAndTitle[0],dateAndTitle[1],posts[i].copy_history[0].text.split('\n').join(' <br> ') + "<br><br>" + linktosourse]
 			vkfrom.push(newarr)

@@ -180,8 +180,10 @@ let transcount = 0;
 		transcount += 100;
 
 		imagesLine.style.transform = `translateX(-${transcount}%)`;
-console.log(transcount + 100)
-	console.log(imagesLine.children.length * 100)
+
+
+	// console.log(transcount + 100)
+	// console.log(imagesLine.children.length * 100)
 
 	if(window.screen.width > 800){
 		if(((imagesLine.children.length * 50) <= (transcount + 50) )||((transcount+100) == (imagesLine.children.length * 50)) ){
@@ -240,12 +242,21 @@ images.forEach((img)=>{
 		blackblur.style.display = 'block';
 		document.querySelector('#showimage').src = event.target.src;
 		console.log(event.target)
+
+		document.onclick = function(e){
+		if (e.target.src == undefined){
+			blackblur.style.display = 'none';
+		}
+	}
 	}
 })
 
-blackblur.onclick = function(){
-	blackblur.style.display = 'none';
-}
+// blackblur.onclick = function(){
+// 	blackblur.style.display = 'none';
+// }
+
+
+
 
 
 </script>

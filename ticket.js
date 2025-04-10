@@ -20,7 +20,7 @@
 	let news = [
 		[
 			'https://sun9-72.userapi.com/impg/XNHbqI0pa7u_MnPdLDG1LjKV-cYPVEsFMGVn4Q/xfcH1OFw9FQ.jpg?size=1156x867&quality=96&sign=12183eca871d4431a9f1eeb6ec39aebe&type=album~https://sun9-44.userapi.com/impg/c-BJFAkzyVUftkw8dOh3kVx4uxiTuq9XrC-_vQ/GHf9m8Dd8Vc.jpg?size=960x1280&quality=96&sign=83ccd25f17fe610f08b6dbfbf200e9d0&type=album~https://sun9-24.userapi.com/impg/-Jn5_x7NeuV1_YL5h-jUVStJJbQj1yr1qCnycg/R14MgWTd0JE.jpg?size=960x1280&quality=96&sign=c67edd3e2f6856b8578a802e67e06bc6&type=album~https://sun9-15.userapi.com/impg/pO27_4BlNYJS1hX86Qhvs3pnAth0gxJInu7pfQ/qNoI7t8J0IE.jpg?size=867x1156&quality=96&sign=251a949e3db67a5313079b53e6219691&type=album~https://sun9-49.userapi.com/impg/uebxMxRGL8WoFpcIh67U3R7QswUV1o0AFCBp4w/DKd5P62KH2M.jpg?size=867x1156&quality=96&sign=a451cd031f17111c0cf2f45b8389b052&type=album',
-			'20 февраля, 2025',
+			'20 февраля, 2025г.',
 			'«Россия индустриальная: тяжёлая промышленность, машиностроение» в МБОУ ООШ станицы Черноярской',
 			`
 			Сегодня на занятии «Россия — мои горизонты» мы погрузились в тему «Россия индустриальная: тяжёлая промышленность, машиностроение». За короткое время мы открыли для себя удивительный мир, где труд человека уже не является единственной движущей силой, но человек остаётся главным умом, который управляет всем происходящим.
@@ -3558,9 +3558,7 @@
 		news.unshift(vkfrom[i]);
 }
 
-console.log(news)
-	
-
+// console.log(news)
 // console.log(vkfrom)
 
 
@@ -3611,14 +3609,13 @@ for(let i= 0; i<=news.length-1;i++){
 		localStorage.setItem('infonew',`${i}`)
 	}
 }
+
 }
 
 let slash = '../';
 
 
 if (document.body.contains(document.getElementsByClassName('the_new_container')[0])) {
-
-
 
 	if(window.location.hash){	
 
@@ -3630,10 +3627,8 @@ if (document.body.contains(document.getElementsByClassName('the_new_container')[
 
 		// alert(news[hashnew])
 
-		console.log(hashnew)
-		console.log(news)
-
-
+		// console.log(hashnew)
+		// console.log(news)
 
 		if(news[hashnew][0][0]=='i'){
 			slash = '../'}
@@ -3767,8 +3762,6 @@ if (document.body.contains(document.getElementsByClassName('the_new_container')[
 	`
 
 	document.querySelector('title').innerText = news[localca][2];
-
-	
 
 	if(news[localca][4]==undefined){
 		document.querySelector('.vidos_bilet').style.display = 'none';
