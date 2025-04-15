@@ -87,7 +87,7 @@ function callbackFunc (result) {
             data[1] = data[1]+',';
             data = data.join(' ');
 
-            console.log(data);
+            // console.log(data);
 
 
             let linktosourse = `Источник: <a href="https://vk.com/public${posts[i].copy_history[0].from_id.slice(1)}" target="blank">https://vk.com/public${posts[i].copy_history[0].from_id.slice(1)}</a>`

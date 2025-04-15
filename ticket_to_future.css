@@ -157,7 +157,7 @@ h2,h3,h4,h5{
 	display: block;
 	/* background-color: white; */
 	background-color: rgb(247,247,247);
-	padding: 10px 10px 15px 10px;
+	padding: 10px 10px 13px 10px;
 	border-radius: 10px;
 	cursor: pointer;
 	transition-property: box-shadow;
@@ -173,16 +173,17 @@ h2,h3,h4,h5{
 .n_text h3{
 	font-size: 1rem;
 	margin-top: 10px;
-	margin-bottom: 11px;
+	/* margin-bottom: 11px; */
 	color: #282c2d;
 }
 
 .n_text p{
+	display: none; /**/
 	margin: 0;
 	font-size: .8rem;
 	line-height: 1.2;
 	/*max-height: 37px;*/
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .n_block:hover{
@@ -231,7 +232,9 @@ footer{
 }
 
 
-.n_block{max-height: 380px; z-index: 2;
+.n_block{
+	/* max-height: 380px;  */
+	z-index: 2;
     overflow: hidden;}
 
 .n_block::-webkit-scrollbar { width: 0; }
@@ -243,6 +246,7 @@ footer{
 	cursor: pointer;
 	padding: 0;
 	display: block;
+	width: 100%; /**/
 }
 
 .vidos_bilet iframe{

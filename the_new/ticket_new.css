@@ -49,6 +49,17 @@ h1{
 	overflow: hidden; 
 }
 
+.cross{
+	position: absolute;
+	right: 15.5px;
+	top: 0.3px;
+	cursor: pointer;
+}
+
+.cross img{
+	width: 40px;
+}
+
 .tv_line_toggle {
     display: flex;
     justify-content: center;

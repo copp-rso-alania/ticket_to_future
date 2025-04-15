@@ -86,7 +86,13 @@
 
 		<div class="blackblur">
 			<div class="fullimage">
-					<img src="" alt="" id="showimage">
+					<img src="" alt="image is not found" id="showimage" name="nocoseimg">
+			</div>
+			<div class="cross">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Chess_xxl45.svg/1200px-Chess_xxl45.svg.png" alt="X">
+				<!-- https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Chess_xxl45.svg/1200px-Chess_xxl45.svg.png -->
+				<!-- https://avatars.mds.yandex.net/i?id=61fbdc17408ef49ac8c0c01e73244ab5459335b4-5253921-images-thumbs&n=13 -->
+				<!-- https://outletfootball.ru/wp-content/uploads/2024/05/x-ofru.png -->
 			</div>
 		</div>
 		
@@ -237,6 +243,8 @@ let images = document.querySelectorAll('img');
 
 let blackblur = document.querySelector('.blackblur');
 
+// console.log(imagesLine.children)
+
 images.forEach((img)=>{
 	img.onclick = (event)=>{
 		blackblur.style.display = 'block';
@@ -244,10 +252,21 @@ images.forEach((img)=>{
 		console.log(event.target)
 
 		document.onclick = function(e){
-		if (e.target.src == undefined){
+		if (e.target.src == undefined || e.target.alt == 'X'){
 			blackblur.style.display = 'none';
 		}
-	}
+		}
+
+		document.onmouseover = function(e){
+		if (e.target.src == undefined || e.target.alt == 'X'){
+			blackblur.style.cursor = 'pointer';
+		}
+		else{
+			blackblur.style.cursor = 'default';
+		}
+		}
+
+
 	}
 })
 
